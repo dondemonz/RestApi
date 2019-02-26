@@ -1,15 +1,6 @@
-atomicwrites
-attrs
-certifi
-cffi
-chardet
-colorama
-gevent
-greenlet
+pytest
 grequests
 httplib2
-idna
-mock
 more-itertools
 oauth2
 parse
