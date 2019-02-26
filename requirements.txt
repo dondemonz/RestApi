@@ -1,5 +1,4 @@
 pytest
-grequests
 httplib2
 more-itertools
 oauth2
