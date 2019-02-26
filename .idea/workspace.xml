@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b827ad91-0da6-4220-b73a-a0177b1f9ff6" name="Default Changelist" comment="" />
+    <list default="true" id="b827ad91-0da6-4220-b73a-a0177b1f9ff6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +123,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -180,9 +183,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-43" />
-    <option name="y" value="16" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="80" />
+    <option name="y" value="48" />
     <option name="width" value="1561" />
     <option name="height" value="920" />
   </component>
@@ -238,7 +241,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="8&#9;FILE&#9;file://C:/Devel/RESTAPI/env/tcl/tcl8.6/tzdata/SystemV/PST8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.project" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -440,8 +443,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="62" width="1561" height="920" extended-state="0" />
-    <editor active="true" />
+    <frame x="80" y="48" width="1561" height="920" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49846154" visible="true" weight="0.222587" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -453,9 +455,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3292683" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.4996717" visible="true" weight="0.32951653" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4996717" visible="true" weight="0.32951653" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32924962" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003283" side_tool="true" visible="true" weight="0.32951653" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.5003283" side_tool="true" visible="true" weight="0.32951653" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32924962" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
