@@ -1,7 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b827ad91-0da6-4220-b73a-a0177b1f9ff6" name="Default Changelist" comment="">
+    <list default="true" id="b827ad91-0da6-4220-b73a-a0177b1f9ff6" name="Default Changelist" comment="24">
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml-4.3.1.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml-4.3.1.dist-info/LICENSES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml-4.3.1.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml-4.3.1.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml-4.3.1.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml-4.3.1.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/ElementInclude.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/_elementpath.cp37-win32.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/_elementpath.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/builder.cp37-win32.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/builder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/cssselect.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/doctestcompare.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/etree.cp37-win32.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/etree.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/etree_api.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/html/ElementSoup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/html/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/html/_diffcommand.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/html/_html5builder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/html/_setmixin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/html/builder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/html/clean.cp37-win32.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/html/clean.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/html/defs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/html/diff.cp37-win32.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/html/diff.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/html/formfill.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/html/html5parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/html/soupparser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/html/usedoctest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/__init__.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/c14n.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/config.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/dtdvalid.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/etree_defs.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/etreepublic.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/htmlparser.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libexslt/exslt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libexslt/exsltconfig.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libexslt/exsltexports.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libexslt/libexslt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/DOCBparser.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/HTMLparser.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/HTMLtree.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/SAX.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/SAX2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/c14n.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/catalog.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/chvalid.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/debugXML.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/dict.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/encoding.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/entities.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/globals.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/hash.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/list.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/nanoftp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/nanohttp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/parser.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/parserInternals.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/pattern.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/relaxng.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/schemasInternals.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/schematron.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/threads.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/tree.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/uri.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/valid.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/xinclude.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/xlink.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/xmlIO.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/xmlautomata.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/xmlerror.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/xmlexports.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/xmlmemory.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/xmlmodule.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/xmlreader.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/xmlregexp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/xmlsave.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/xmlschemas.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/xmlschemastypes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/xmlstring.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/xmlunicode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/xmlversion.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/xmlwriter.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/xpath.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/xpathInternals.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxml/xpointer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/attributes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/documents.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/extensions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/extra.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/functions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/imports.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/keys.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/libxslt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/namespaces.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/numbersInternals.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/preproc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/security.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/templates.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/transform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/trio.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/triodef.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/variables.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/win32config.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/xslt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/xsltInternals.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/xsltconfig.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/xsltexports.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/xsltlocale.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/libxslt/xsltutils.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/lxml-version.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/relaxng.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/schematron.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/tree.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/uri.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/xinclude.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/xmlerror.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/xmlparser.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/xmlschema.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/xpath.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/includes/xslt.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/isoschematron/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/isoschematron/resources/rng/iso-schematron.rng" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/isoschematron/resources/xsl/RNG2Schtrn.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/isoschematron/resources/xsl/XSD2Schtrn.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_abstract_expand.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_dsdl_include.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_schematron_message.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_schematron_skeleton_for_xslt1.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_svrl_for_xslt1.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/lxml.etree.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/lxml.etree_api.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/objectify.cp37-win32.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/pyclasslookup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/sax.cp37-win32.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/sax.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/Lib/site-packages/lxml/usedoctest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
@@ -15,10 +158,11 @@
     <session id="-587475358">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="29" />
+          <entry key="project.closed" value="31" />
           <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.17" value="2" />
@@ -29,7 +173,7 @@
           <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.8" value="3" />
           <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="31" />
+          <entry key="project.opened" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -38,7 +182,7 @@
           <entry key="dll" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="png" value="1" />
-          <entry key="py" value="466" />
+          <entry key="py" value="467" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
@@ -47,7 +191,7 @@
           <entry key="C++" value="1" />
           <entry key="Image" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="466" />
+          <entry key="Python" value="467" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -56,12 +200,12 @@
           <entry key="dummy" value="139" />
           <entry key="gitignore" value="11" />
           <entry key="py" value="28535" />
-          <entry key="txt" value="37" />
+          <entry key="txt" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="187" />
+          <entry key="PLAIN_TEXT" value="189" />
           <entry key="Python" value="28595" />
         </counts>
       </usages-collector>
@@ -85,16 +229,7 @@
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test_cam_post_v2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1768">
-              <caret line="108" selection-start-line="108" selection-end-line="108" />
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -125,6 +260,15 @@
               <folding>
                 <element signature="e#0#74#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test_cam_post_v2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1768">
+              <caret line="108" selection-start-line="108" selection-end-line="108" />
             </state>
           </provider>
         </entry>
@@ -206,8 +350,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="80" />
-    <option name="y" value="48" />
+    <option name="x" value="208" />
+    <option name="y" value="60" />
     <option name="width" value="1561" />
     <option name="height" value="920" />
   </component>
@@ -233,7 +377,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -260,12 +403,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="8&#9;FILE&#9;file://C:/Devel/RESTAPI/env/tcl/tcl8.6/tzdata/SystemV/PST8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -297,7 +441,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_z_delete_environment.test_delete_environment">
+  <component name="RunManager" selected="Python tests.pytest for test_1.test_create_environment">
     <configuration name="pytest for test_1.test_create_environment" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="RESTAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -382,10 +526,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_1.test_create_environment" />
         <item itemvalue="Python tests.pytest for test_z_delete_environment.test_delete_environment" />
         <item itemvalue="Python tests.pytest in test_cam_post_v2.py" />
         <item itemvalue="Python tests.pytest in test_cam_get_cam_image_v2.py" />
-        <item itemvalue="Python tests.pytest for test_1.test_create_environment" />
         <item itemvalue="Python tests.pytest for test_1.test_test" />
       </list>
     </recent_temporary>
@@ -457,13 +601,17 @@
       <option name="project" value="LOCAL" />
       <updated>1551207684783</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="24">
+      <created>1551282191375</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1551282191375</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_1_test_test - 2019.02.26 at 09h 47m 52s.xml">
-      <configuration name="pytest for test_1.test_test" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_for_test_1_test_create_environment - 2019.02.26 at 21h 49m 24s.xml">
       <configuration name="pytest for test_1.test_create_environment" configurationId="tests" />
     </history-entry>
@@ -491,6 +639,9 @@
     <history-entry file="pytest_for_test_z_delete_environment_test_delete_environment - 2019.02.27 at 18h 22m 35s.xml">
       <configuration name="pytest for test_z_delete_environment.test_delete_environment" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_for_test_1_test_create_environment - 2019.02.27 at 20h 27m 30s.xml">
+      <configuration name="pytest for test_1.test_create_environment" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -502,21 +653,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="80" y="48" width="1561" height="920" extended-state="0" />
+    <frame x="208" y="60" width="1561" height="920" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49846154" visible="true" weight="0.222587" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49846154" visible="true" weight="0.222587" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50153846" side_tool="true" weight="0.2496329" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32824427" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4990151" visible="true" weight="0.42493638" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4977019" weight="0.42493638" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39694658" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3292683" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4990151" weight="0.32824427" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4996717" weight="0.32951653" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32924962" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5009849" side_tool="true" visible="true" weight="0.42493638" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5022981" side_tool="true" visible="true" weight="0.42493638" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32924962" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -793,10 +945,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_cam_post_v2.py">
+    <entry file="file://$PROJECT_DIR$/test/test_z_delete_environment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -817,19 +969,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_z_delete_environment.py">
+    <entry file="file://$PROJECT_DIR$/test/test_cam_post_v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="1768">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
