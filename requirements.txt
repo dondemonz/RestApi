@@ -16,3 +16,5 @@ selenium
 six
 syspath
 urllib3
+lxml-4.3.1-cp37-cp37m-win32.whl
+pytest-allure-adaptor
