@@ -16,3 +16,4 @@ selenium
 six
 syspath
 urllib3
+allure-pytest
