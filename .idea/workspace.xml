@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b827ad91-0da6-4220-b73a-a0177b1f9ff6" name="Default Changelist" comment="">
+    <list default="true" id="b827ad91-0da6-4220-b73a-a0177b1f9ff6" name="Default Changelist" comment="24">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_subscriptions_put_v1.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_subscriptions_put_v1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_cam_get_cam_image_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_cam_get_cam_image_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_subscriptions_get_post_v1.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_subscriptions_get_post_v1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,16 +41,16 @@
           <entry key="dll" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="png" value="1" />
-          <entry key="py" value="472" />
-          <entry key="txt" value="1" />
+          <entry key="py" value="478" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="C++" value="1" />
           <entry key="Image" value="1" />
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="472" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Python" value="478" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -56,14 +58,14 @@
           <entry key="Python Console" value="60" />
           <entry key="dummy" value="139" />
           <entry key="gitignore" value="11" />
-          <entry key="py" value="28558" />
-          <entry key="txt" value="59" />
+          <entry key="py" value="28591" />
+          <entry key="txt" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="209" />
-          <entry key="Python" value="28618" />
+          <entry key="PLAIN_TEXT" value="212" />
+          <entry key="Python" value="28651" />
         </counts>
       </usages-collector>
     </session>
@@ -76,8 +78,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/test_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" column="96" selection-start-line="20" selection-start-column="96" selection-end-line="20" selection-end-column="96" />
+            <state relative-caret-position="306">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test_subscriptions_get_post_v1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -92,10 +112,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test_cam_get_cam_image_v2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-425">
+              <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/test_subscriptions_put_v1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+            <state relative-caret-position="319">
+              <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -105,15 +134,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/check_event_gate_response.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -178,7 +198,6 @@
         <option value="$PROJECT_DIR$/test/test_cam_get_v2.py" />
         <option value="$PROJECT_DIR$/fixture/load_dll.py" />
         <option value="$PROJECT_DIR$/test/test_cam_delete_v2.py" />
-        <option value="$PROJECT_DIR$/test/test_cam_get_cam_image_v2.py" />
         <option value="$PROJECT_DIR$/test/test_cam_get_protocol_v2.py" />
         <option value="$PROJECT_DIR$/model/json_check.py" />
         <option value="$PROJECT_DIR$/test/test_cam_push.py" />
@@ -190,23 +209,24 @@
         <option value="$PROJECT_DIR$/test/test_persons_put_v1.py" />
         <option value="$PROJECT_DIR$/test/test_server_v1.py" />
         <option value="$PROJECT_DIR$/test/test_subscriptions_delete_v1.py" />
-        <option value="$PROJECT_DIR$/test/test_subscriptions_get_post_v1.py" />
         <option value="$PROJECT_DIR$/test/test_tasks_export_delete_v1.py" />
         <option value="$PROJECT_DIR$/test/test_tasks_export_get_v1.py" />
         <option value="$PROJECT_DIR$/test/test_tasks_export_post_v1.py" />
         <option value="$PROJECT_DIR$/test/test_cam_post_v2.py" />
-        <option value="$PROJECT_DIR$/test/test_1.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/model/input_data.py" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/test/test_1.py" />
         <option value="$PROJECT_DIR$/test/test_subscriptions_put_v1.py" />
+        <option value="$PROJECT_DIR$/test/test_cam_get_cam_image_v2.py" />
+        <option value="$PROJECT_DIR$/test/test_subscriptions_get_post_v1.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="215" />
+    <option name="x" value="64" />
     <option name="y" value="32" />
-    <option name="width" value="1561" />
+    <option name="width" value="1712" />
     <option name="height" value="920" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -295,8 +315,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_subscriptions_put_v1.test_PutV1SubscriptionsCode200And401AndSendPostCallback">
-    <configuration name="pytest for test_1.test_create_environment" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest in test">
+    <configuration name="pytest for test_cam_get_cam_image_v2.test_GetV2CamLiveImageCode200" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="RESTAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -307,7 +327,22 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_1.test_create_environment&quot;" />
+      <option name="_new_target" value="&quot;test_cam_get_cam_image_v2.test_GetV2CamLiveImageCode200&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_subscriptions_get_post_v1.test_GetV1SubscriptionByIdCode200And401AndPostV1SubscriptionCode201AndSendPostCallback" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="RESTAPI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_subscriptions_get_post_v1.test_GetV1SubscriptionByIdCode200And401AndPostV1SubscriptionCode201AndSendPostCallback&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -323,21 +358,6 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_subscriptions_put_v1.test_PutV1SubscriptionsCode200And401AndSendPostCallback&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_tasks_export_post_v1.test_PostV1TaskCode400" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="RESTAPI" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_tasks_export_post_v1.test_PostV1TaskCode400&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -372,19 +392,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.pytest for test_1.test_create_environment" />
       <item itemvalue="Python tests.pytest in test" />
-      <item itemvalue="Python tests.pytest for test_tasks_export_post_v1.test_PostV1TaskCode400" />
+      <item itemvalue="Python tests.pytest for test_subscriptions_get_post_v1.test_GetV1SubscriptionByIdCode200And401AndPostV1SubscriptionCode201AndSendPostCallback" />
+      <item itemvalue="Python tests.pytest for test_cam_get_cam_image_v2.test_GetV2CamLiveImageCode200" />
       <item itemvalue="Python tests.pytest for test_subscriptions_put_v1.test_PutV1SubscriptionsCode200And401AndSendPostCallback" />
       <item itemvalue="Python tests.pytest for test_z_delete_environment.test_delete_environment" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_subscriptions_put_v1.test_PutV1SubscriptionsCode200And401AndSendPostCallback" />
-        <item itemvalue="Python tests.pytest for test_1.test_create_environment" />
-        <item itemvalue="Python tests.pytest for test_z_delete_environment.test_delete_environment" />
-        <item itemvalue="Python tests.pytest for test_tasks_export_post_v1.test_PostV1TaskCode400" />
         <item itemvalue="Python tests.pytest in test" />
+        <item itemvalue="Python tests.pytest for test_z_delete_environment.test_delete_environment" />
+        <item itemvalue="Python tests.pytest for test_subscriptions_get_post_v1.test_GetV1SubscriptionByIdCode200And401AndPostV1SubscriptionCode201AndSendPostCallback" />
+        <item itemvalue="Python tests.pytest for test_subscriptions_put_v1.test_PutV1SubscriptionsCode200And401AndSendPostCallback" />
+        <item itemvalue="Python tests.pytest for test_cam_get_cam_image_v2.test_GetV2CamLiveImageCode200" />
       </list>
     </recent_temporary>
   </component>
@@ -483,39 +503,46 @@
       <option name="project" value="LOCAL" />
       <updated>1552316493872</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="24">
+      <created>1552325969385</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1552325969385</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_test - 2019.03.11 at 17h 11m 58s.xml">
+    <history-entry file="pytest_for_test_subscriptions_get_post_v1_test_GetV1SubscriptionByIdCode200And401AndPostV1SubscriptionCode201AndSendPostCallback - 2019.03.11 at 20h 53m 39s.xml">
+      <configuration name="pytest for test_subscriptions_get_post_v1.test_GetV1SubscriptionByIdCode200And401AndPostV1SubscriptionCode201AndSendPostCallback" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_subscriptions_get_post_v1_test_GetV1SubscriptionByIdCode200And401AndPostV1SubscriptionCode201AndSendPostCallback - 2019.03.11 at 20h 54m 18s.xml">
+      <configuration name="pytest for test_subscriptions_get_post_v1.test_GetV1SubscriptionByIdCode200And401AndPostV1SubscriptionCode201AndSendPostCallback" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_subscriptions_get_post_v1_test_GetV1SubscriptionByIdCode200And401AndPostV1SubscriptionCode201AndSendPostCallback - 2019.03.11 at 20h 54m 30s.xml">
+      <configuration name="pytest for test_subscriptions_get_post_v1.test_GetV1SubscriptionByIdCode200And401AndPostV1SubscriptionCode201AndSendPostCallback" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_subscriptions_get_post_v1_test_GetV1SubscriptionByIdCode200And401AndPostV1SubscriptionCode201AndSendPostCallback - 2019.03.11 at 20h 54m 52s.xml">
+      <configuration name="pytest for test_subscriptions_get_post_v1.test_GetV1SubscriptionByIdCode200And401AndPostV1SubscriptionCode201AndSendPostCallback" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_subscriptions_put_v1_test_PutV1SubscriptionsCode200And401AndSendPostCallback - 2019.03.11 at 20h 58m 30s.xml">
+      <configuration name="pytest for test_subscriptions_put_v1.test_PutV1SubscriptionsCode200And401AndSendPostCallback" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_subscriptions_get_post_v1_test_GetV1SubscriptionByIdCode200And401AndPostV1SubscriptionCode201AndSendPostCallback - 2019.03.11 at 21h 02m 05s.xml">
+      <configuration name="pytest for test_subscriptions_get_post_v1.test_GetV1SubscriptionByIdCode200And401AndPostV1SubscriptionCode201AndSendPostCallback" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_subscriptions_get_post_v1_test_GetV1SubscriptionByIdCode200And401AndPostV1SubscriptionCode201AndSendPostCallback - 2019.03.11 at 21h 10m 43s.xml">
+      <configuration name="pytest for test_subscriptions_get_post_v1.test_GetV1SubscriptionByIdCode200And401AndPostV1SubscriptionCode201AndSendPostCallback" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test - 2019.03.11 at 21h 10m 53s.xml">
       <configuration name="pytest in test" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_z_delete_environment_py - 2019.03.11 at 18h 24m 47s.xml">
-      <configuration name="pytest in test_z_delete_environment.py" configurationId="tests" />
+    <history-entry file="pytest_for_test_z_delete_environment_test_delete_environment - 2019.03.11 at 21h 11m 07s.xml">
+      <configuration name="pytest for test_z_delete_environment.test_delete_environment" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test - 2019.03.11 at 20h 17m 48s.xml">
+    <history-entry file="pytest_in_test - 2019.03.11 at 21h 13m 29s.xml">
       <configuration name="pytest in test" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_1_test_create_environment - 2019.03.11 at 20h 20m 47s.xml">
-      <configuration name="pytest for test_1.test_create_environment" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_1_test_create_environment - 2019.03.11 at 20h 21m 21s.xml">
-      <configuration name="pytest for test_1.test_create_environment" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_tasks_export_post_v1_test_PostV1TaskCode400 - 2019.03.11 at 20h 21m 39s.xml">
-      <configuration name="pytest for test_tasks_export_post_v1.test_PostV1TaskCode400" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_subscriptions_put_v1_test_PutV1SubscriptionsCode200And401AndSendPostCallback - 2019.03.11 at 20h 22m 47s.xml">
-      <configuration name="pytest for test_subscriptions_put_v1.test_PutV1SubscriptionsCode200And401AndSendPostCallback" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_subscriptions_put_v1_test_PutV1SubscriptionsCode200And401AndSendPostCallback - 2019.03.11 at 20h 24m 23s.xml">
-      <configuration name="pytest for test_subscriptions_put_v1.test_PutV1SubscriptionsCode200And401AndSendPostCallback" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_subscriptions_put_v1_test_PutV1SubscriptionsCode200And401AndSendPostCallback - 2019.03.11 at 20h 26m 19s.xml">
-      <configuration name="pytest for test_subscriptions_put_v1.test_PutV1SubscriptionsCode200And401AndSendPostCallback" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_subscriptions_put_v1_test_PutV1SubscriptionsCode200And401AndSendPostCallback - 2019.03.11 at 20h 34m 54s.xml">
-      <configuration name="pytest for test_subscriptions_put_v1.test_PutV1SubscriptionsCode200And401AndSendPostCallback" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -528,10 +555,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="215" y="32" width="1561" height="920" extended-state="0" />
+    <frame x="64" y="32" width="1712" height="920" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49846154" visible="true" weight="0.222587" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49846154" visible="true" weight="0.20250896" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50153846" side_tool="true" weight="0.2496329" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -740,13 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_subscriptions_get_post_v1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_tasks_export_delete_v1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -782,13 +802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_cam_get_cam_image_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3213">
-          <caret line="196" column="138" selection-start-line="196" selection-start-column="126" selection-end-line="196" selection-end-column="138" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_cam_post_v2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
@@ -796,34 +809,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/load_dll.py">
+    <entry file="file://$PROJECT_DIR$/conftest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_z_delete_environment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="85">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="96" selection-start-line="20" selection-start-column="96" selection-end-line="20" selection-end-column="96" />
+        <state relative-caret-position="306">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -836,22 +832,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/check_event_gate_response.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        <state relative-caret-position="221">
+          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conftest.py">
+    <entry file="file://$PROJECT_DIR$/fixture/load_dll.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        <state relative-caret-position="-833">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#74#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_subscriptions_put_v1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+        <state relative-caret-position="319">
+          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_z_delete_environment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_subscriptions_get_post_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_cam_get_cam_image_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-425">
+          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
         </state>
       </provider>
     </entry>

@@ -6,7 +6,7 @@ import time
 
 # Создание и получение подписки
 def test_GetV1SubscriptionByIdCode200And401AndPostV1SubscriptionCode201AndSendPostCallback(fix):
-    data = {"callback": "http://localhost:/event?", "filter": {"action": "EVENT", "id": "777", "type": "TEST"}}
+    data = {"callback": "http://localhost:88/event?", "filter": {"action": "EVENT", "id": "777", "type": "TEST"}}
     post_response = requests.post(url="http://" + slave_ip + ":8888/api/v1/events/subscriptions", headers=headers, data=json.dumps(dict(data)), auth=auth)
     user_resp_code = "201"
     assert str(post_response.status_code) == user_resp_code
@@ -18,6 +18,7 @@ def test_GetV1SubscriptionByIdCode200And401AndPostV1SubscriptionCode201AndSendPo
     fix.send_event(message="TEST|777|EVENT".encode("utf-8"))
     time.sleep(3)
     # print(fix.cb1)
+
 
     action, id, method, path, peer_address, type = check_event_gate_response(fix)
     assert action == "EVENT" and id == "777" and type == "TEST" and method == "POST" and path == "event" and peer_address == "::1"

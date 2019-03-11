@@ -30,7 +30,7 @@ def test_reload_video_exe():
         # check whether the process name matches
         if proc.name() == PROCNAME:
             proc.kill()
-    time.sleep(7)
+    time.sleep(10)
 
 def test_GetV2CamLiveImageCode200():
     # data = "success"

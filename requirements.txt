@@ -8,6 +8,7 @@ Pillow
 pluggy
 pprint
 psutil
+shutil
 py
 pycparser
 pytest
