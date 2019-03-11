@@ -123,6 +123,7 @@ def test_GetV2CamLiveScaleImageCode404():
 
 # Запросы на получение кадра с камеры
 def test_GetV2CamImageCode200(fix):
+    time.sleep(10)
     fix.connect_to_dll()
     fix.send_react(("CAM|"+camId+"|REC").encode("utf-8"))
     time.sleep(2)
@@ -135,6 +136,7 @@ def test_GetV2CamImageCode200(fix):
     time.sleep(5)
     response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image/"+archtime, auth=auth, stream=True)
     user_resp_code = "200"
+    time.sleep(10)
     assert str(response.status_code) == user_resp_code
     # print(response)
     # контент картинки, почему то есть проблемы с сохранением файла при этом выводе
@@ -144,7 +146,7 @@ def test_GetV2CamImageCode200(fix):
     with open(exportPath+'img.png', 'wb') as out_file:
         shutil.copyfileobj(response.raw, out_file)
     del response
-
+    time.sleep(10)
 
 def test_GetV2CamImageCode400_IncorrectTime():
     data1 = "time (2015-11-19T18:480:32) is not in valid format or incorrect. Expected format: yyyy-MM-dd hh:mm:ss[.zzz]"
