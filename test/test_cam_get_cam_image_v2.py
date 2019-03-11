@@ -33,9 +33,11 @@ def test_reload_video_exe():
     time.sleep(10)
 
 def test_GetV2CamLiveImageCode200():
+    time.sleep(5)
     # data = "success"
     response = requests.get(url="http://"+slave_ip+":8888/api/v2/cameras/"+camId+"/image", auth=auth, stream=True)
     user_resp_code = "200"
+    time.sleep(5)
     assert str(response.status_code) == user_resp_code
 
     # контент картинки, почему то есть проблемы с сохранением файла при этом выводе
@@ -72,13 +74,16 @@ def test_GetV2CamLiveImageCode404_CamNotFound():
 # Запрос на получение масштабированного кадра живого видео с камеры
 def test_GetV2CamLiveScaleImageCode200():
     # data = "success"
+    time.sleep(5)
     response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image?scale_y=500&scale_x=500", auth=auth, stream=True)
     user_resp_code = "200"
+    time.sleep(5)
     assert str(response.status_code) == user_resp_code
     # сохранить картинку в файл
     with open(exportPath+'img1.png', 'wb') as out_file:
         shutil.copyfileobj(response.raw, out_file)
     del response
+    time.sleep(5)
 
 def test_GetV2CamLiveScaleImageCode200WithOnlyX():
     # data = "success"
