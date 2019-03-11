@@ -45,6 +45,7 @@ def test_GetV2CamLiveImageCode200():
     with open(exportPath+'img.png', 'wb') as out_file:
         shutil.copyfileobj(response.raw, out_file)
     del response
+    time.sleep(5)
 
     """
     # сразу показать картинку
@@ -75,7 +76,7 @@ def test_GetV2CamLiveScaleImageCode200():
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
     # сохранить картинку в файл
-    with open(exportPath+'img.png', 'wb') as out_file:
+    with open(exportPath+'img1.png', 'wb') as out_file:
         shutil.copyfileobj(response.raw, out_file)
     del response
 
