@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b827ad91-0da6-4220-b73a-a0177b1f9ff6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_cam_get_cam_image_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_cam_get_cam_image_v2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +38,7 @@
           <entry key="dll" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="png" value="1" />
-          <entry key="py" value="478" />
+          <entry key="py" value="479" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
@@ -48,7 +47,7 @@
           <entry key="C++" value="1" />
           <entry key="Image" value="1" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="478" />
+          <entry key="Python" value="479" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -56,14 +55,14 @@
           <entry key="Python Console" value="60" />
           <entry key="dummy" value="139" />
           <entry key="gitignore" value="11" />
-          <entry key="py" value="28616" />
+          <entry key="py" value="28619" />
           <entry key="txt" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="212" />
-          <entry key="Python" value="28676" />
+          <entry key="Python" value="28679" />
         </counts>
       </usages-collector>
     </session>
@@ -104,10 +103,19 @@
         <entry file="file://$PROJECT_DIR$/test/test_cam_get_cam_image_v2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="148" column="18" selection-start-line="148" selection-start-column="18" selection-end-line="148" selection-end-column="18" />
+              <caret line="49" column="18" lean-forward="true" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test_cam_get_protocol_v2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="280" column="17" selection-start-line="280" selection-start-column="17" selection-end-line="280" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -172,7 +180,6 @@
         <option value="$PROJECT_DIR$/test/test_cam_get_v2.py" />
         <option value="$PROJECT_DIR$/fixture/load_dll.py" />
         <option value="$PROJECT_DIR$/test/test_cam_delete_v2.py" />
-        <option value="$PROJECT_DIR$/test/test_cam_get_protocol_v2.py" />
         <option value="$PROJECT_DIR$/model/json_check.py" />
         <option value="$PROJECT_DIR$/test/test_cam_push.py" />
         <option value="$PROJECT_DIR$/test/test_cam_put_v2.py" />
@@ -194,6 +201,7 @@
         <option value="$PROJECT_DIR$/test/test_subscriptions_get_post_v1.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/test/test_cam_get_cam_image_v2.py" />
+        <option value="$PROJECT_DIR$/test/test_cam_get_protocol_v2.py" />
       </list>
     </option>
   </component>
@@ -512,7 +520,21 @@
       <option name="project" value="LOCAL" />
       <updated>1552331778375</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="24">
+      <created>1552333242608</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1552333242608</updated>
+    </task>
+    <task id="LOCAL-00019" summary="24">
+      <created>1552369641472</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1552369641472</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -560,12 +582,12 @@
     <frame x="64" y="32" width="1712" height="920" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49846154" visible="true" weight="0.20489845" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49846154" visible="true" weight="0.20489845" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50153846" side_tool="true" weight="0.2496329" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32824427" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4970453" visible="true" weight="0.42493638" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4970453" visible="true" weight="0.42493638" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39694658" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -696,13 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_cam_get_protocol_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="348" selection-start-line="348" selection-end-line="348" />
         </state>
       </provider>
     </entry>
@@ -884,10 +899,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_cam_get_protocol_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="280" column="17" selection-start-line="280" selection-start-column="17" selection-end-line="280" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_cam_get_cam_image_v2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="148" column="18" selection-start-line="148" selection-start-column="18" selection-end-line="148" selection-end-column="18" />
+          <caret line="49" column="18" lean-forward="true" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
