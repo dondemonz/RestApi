@@ -222,6 +222,7 @@ def test_GetV2CamImageCode503():
     archtime = m.strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
     response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image/" + archtime, auth=auth)
     user_resp_code = "503"
+    time.sleep(10)
     assert str(response.status_code) == user_resp_code
 
 
