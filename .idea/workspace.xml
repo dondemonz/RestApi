@@ -56,14 +56,14 @@
           <entry key="Python Console" value="60" />
           <entry key="dummy" value="139" />
           <entry key="gitignore" value="11" />
-          <entry key="py" value="28650" />
+          <entry key="py" value="28708" />
           <entry key="txt" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="212" />
-          <entry key="Python" value="28710" />
+          <entry key="Python" value="28768" />
         </counts>
       </usages-collector>
     </session>
@@ -115,8 +115,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/test_cam_get_protocol_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="363" column="18" selection-start-line="363" selection-start-column="18" selection-end-line="363" selection-end-column="18" />
+            <state relative-caret-position="47">
+              <caret line="283" column="20" lean-forward="true" selection-start-line="283" selection-start-column="20" selection-end-line="283" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -298,7 +298,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_z_delete_environment.test_delete_environment">
+  <component name="RunManager" selected="Python tests.pytest for test_cam_get_protocol_v2.test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId">
     <configuration name="pytest for test_1.test_create_environment" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="RESTAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -329,7 +329,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_cam_get_cam_image_v2.test_GetV2CamLiveScaleImageCode200" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_cam_get_protocol_v2.test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="RESTAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -340,7 +340,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_cam_get_cam_image_v2.test_GetV2CamLiveScaleImageCode200&quot;" />
+      <option name="_new_target" value="&quot;test_cam_get_protocol_v2.test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -359,7 +359,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_cam_get_cam_image_v2.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in test_cam_get_protocol_v2.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="RESTAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -370,24 +370,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_cam_get_cam_image_v2.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_cam_get_protocol_v2.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python tests.pytest for test_1.test_create_environment" />
-      <item itemvalue="Python tests.pytest for test_cam_get_cam_image_v2.test_GetV2CamLiveScaleImageCode200" />
       <item itemvalue="Python tests.pytest for test_cam_get_cam_image_v2.test_GetV2CamLiveImageCode200" />
-      <item itemvalue="Python tests.pytest in test_cam_get_cam_image_v2.py" />
       <item itemvalue="Python tests.pytest for test_z_delete_environment.test_delete_environment" />
+      <item itemvalue="Python tests.pytest for test_cam_get_protocol_v2.test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId" />
+      <item itemvalue="Python tests.pytest in test_cam_get_protocol_v2.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_cam_get_protocol_v2.test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId" />
+        <item itemvalue="Python tests.pytest in test_cam_get_protocol_v2.py" />
+        <item itemvalue="Python tests.pytest for test_1.test_create_environment" />
         <item itemvalue="Python tests.pytest for test_z_delete_environment.test_delete_environment" />
         <item itemvalue="Python tests.pytest for test_cam_get_cam_image_v2.test_GetV2CamLiveImageCode200" />
-        <item itemvalue="Python tests.pytest in test_cam_get_cam_image_v2.py" />
-        <item itemvalue="Python tests.pytest for test_cam_get_cam_image_v2.test_GetV2CamLiveScaleImageCode200" />
-        <item itemvalue="Python tests.pytest for test_1.test_create_environment" />
       </list>
     </recent_temporary>
   </component>
@@ -563,39 +563,53 @@
       <option name="project" value="LOCAL" />
       <updated>1552374723554</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="24">
+      <created>1552375519079</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1552375519079</updated>
+    </task>
+    <task id="LOCAL-00025" summary="24">
+      <created>1552385583123</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1552385583123</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_cam_get_cam_image_v2_test_GetV2CamLiveScaleImageCode200 - 2019.03.11 at 21h 39m 01s.xml">
-      <configuration name="pytest for test_cam_get_cam_image_v2.test_GetV2CamLiveScaleImageCode200" configurationId="tests" />
+    <history-entry file="pytest_for_test_cam_get_protocol_v2_test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId - 2019.03.12 at 13h 50m 29s.xml">
+      <configuration name="pytest for test_cam_get_protocol_v2.test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_cam_get_cam_image_v2_py - 2019.03.11 at 21h 39m 47s.xml">
-      <configuration name="pytest in test_cam_get_cam_image_v2.py" configurationId="tests" />
+    <history-entry file="pytest_for_test_cam_get_protocol_v2_test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId - 2019.03.12 at 13h 51m 44s.xml">
+      <configuration name="pytest for test_cam_get_protocol_v2.test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_cam_get_cam_image_v2_test_GetV2CamLiveImageCode200 - 2019.03.11 at 21h 43m 11s.xml">
-      <configuration name="pytest for test_cam_get_cam_image_v2.test_GetV2CamLiveImageCode200" configurationId="tests" />
+    <history-entry file="pytest_for_test_cam_get_protocol_v2_test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId - 2019.03.12 at 13h 53m 16s.xml">
+      <configuration name="pytest for test_cam_get_protocol_v2.test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_cam_get_cam_image_v2_test_GetV2CamLiveImageCode200 - 2019.03.11 at 21h 43m 20s.xml">
-      <configuration name="pytest for test_cam_get_cam_image_v2.test_GetV2CamLiveImageCode200" configurationId="tests" />
+    <history-entry file="pytest_in_test_cam_get_protocol_v2_py - 2019.03.12 at 14h 02m 01s.xml">
+      <configuration name="pytest in test_cam_get_protocol_v2.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_cam_get_cam_image_v2_test_GetV2CamLiveImageCode200 - 2019.03.11 at 21h 43m 25s.xml">
-      <configuration name="pytest for test_cam_get_cam_image_v2.test_GetV2CamLiveImageCode200" configurationId="tests" />
+    <history-entry file="pytest_for_test_cam_get_protocol_v2_test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId - 2019.03.12 at 14h 03m 44s.xml">
+      <configuration name="pytest for test_cam_get_protocol_v2.test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_cam_get_cam_image_v2_test_GetV2CamLiveImageCode200 - 2019.03.11 at 21h 43m 38s.xml">
-      <configuration name="pytest for test_cam_get_cam_image_v2.test_GetV2CamLiveImageCode200" configurationId="tests" />
+    <history-entry file="pytest_for_test_cam_get_protocol_v2_test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId - 2019.03.12 at 14h 04m 33s.xml">
+      <configuration name="pytest for test_cam_get_protocol_v2.test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_cam_get_cam_image_v2_test_GetV2CamLiveImageCode200 - 2019.03.11 at 21h 44m 11s.xml">
-      <configuration name="pytest for test_cam_get_cam_image_v2.test_GetV2CamLiveImageCode200" configurationId="tests" />
+    <history-entry file="pytest_for_test_cam_get_protocol_v2_test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId - 2019.03.12 at 14h 04m 53s.xml">
+      <configuration name="pytest for test_cam_get_protocol_v2.test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_cam_get_cam_image_v2_test_GetV2CamLiveImageCode200 - 2019.03.11 at 21h 44m 16s.xml">
-      <configuration name="pytest for test_cam_get_cam_image_v2.test_GetV2CamLiveImageCode200" configurationId="tests" />
+    <history-entry file="pytest_for_test_cam_get_protocol_v2_test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId - 2019.03.12 at 14h 05m 22s.xml">
+      <configuration name="pytest for test_cam_get_protocol_v2.test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_cam_get_cam_image_v2_test_GetV2CamLiveImageCode200 - 2019.03.11 at 21h 44m 20s.xml">
-      <configuration name="pytest for test_cam_get_cam_image_v2.test_GetV2CamLiveImageCode200" configurationId="tests" />
+    <history-entry file="pytest_for_test_cam_get_protocol_v2_test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId - 2019.03.12 at 14h 05m 41s.xml">
+      <configuration name="pytest for test_cam_get_protocol_v2.test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_z_delete_environment_test_delete_environment - 2019.03.11 at 21h 45m 39s.xml">
-      <configuration name="pytest for test_z_delete_environment.test_delete_environment" configurationId="tests" />
+    <history-entry file="pytest_for_test_cam_get_protocol_v2_test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId - 2019.03.12 at 14h 06m 21s.xml">
+      <configuration name="pytest for test_cam_get_protocol_v2.test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -611,12 +625,12 @@
     <frame x="64" y="32" width="1712" height="920" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49846154" visible="true" weight="0.20489845" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49846154" visible="true" weight="0.20489845" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50153846" side_tool="true" weight="0.2496329" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32824427" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4970453" visible="true" weight="0.42493638" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4970453" visible="true" weight="0.42493638" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39694658" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -886,13 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_subscriptions_get_post_v1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -914,13 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/input_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_z_delete_environment.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -938,10 +938,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/input_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_cam_get_protocol_v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="363" column="18" selection-start-line="363" selection-start-column="18" selection-end-line="363" selection-end-column="18" />
+        <state relative-caret-position="47">
+          <caret line="283" column="20" lean-forward="true" selection-start-line="283" selection-start-column="20" selection-end-line="283" selection-end-column="62" />
         </state>
       </provider>
     </entry>
