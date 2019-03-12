@@ -196,7 +196,7 @@ def test_GetV2CameraProtocolCode200EventFilterAllowEvent(fix):
     data2 = 1
     fix.connect_to_dll()
     fix.send_event(message=(("CORE||UPDATE_OBJECT|objtype<EVENT_FILTER>,objid<"+objId+">,parent_id<1>,EVENT.action.count<1>,EVENT.type.count<1>,EVENT.id.count<1>,EVENT.rule.count<1>,EVENT.rule.0<1>,EVENT.id.0<>,EVENT.type.0<CAM>,EVENT.action.0<ARMED>").encode("utf-8")))
-    time.sleep(3)
+    time.sleep(10)
     m = dt.datetime.now()
     starttime = m.strftime("%Y-%m-%d %H:%M:%S")
     fix.send_react(("CAM|"+camId+"|ARM").encode("utf-8"))
@@ -209,18 +209,22 @@ def test_GetV2CameraProtocolCode200EventFilterAllowEvent(fix):
     time.sleep(2)
     response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime, auth=auth)
     user_resp_code = "200"
+    time.sleep(10)
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
     data1 = json.loads(body)
     n = data1["data"]["actual_count"]
+    time.sleep(10)
     assert data == n
 
     response1 = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId1+"/protocol?start_time=" + starttime, auth=auth)
     user_resp_code = "200"
+    time.sleep(10)
     assert str(response1.status_code) == user_resp_code
     body1 = json.dumps(response1.json())
     data3 = json.loads(body1)
     n2 = data3["data"]["actual_count"]
+    time.sleep(10)
     assert data2 == n2
 
 def test_GetV2CameraProtocolCode200EventFilterAllowIdForbidAll(fix):

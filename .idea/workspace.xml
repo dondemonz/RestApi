@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b827ad91-0da6-4220-b73a-a0177b1f9ff6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_cam_get_cam_image_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_cam_get_cam_image_v2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -549,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552373102444</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="24">
+      <created>1552373668592</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1552373668592</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -594,7 +600,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="32" width="1712" height="920" extended-state="0" />
+    <frame x="64" y="32" width="1712" height="920" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49846154" visible="true" weight="0.20489845" />
