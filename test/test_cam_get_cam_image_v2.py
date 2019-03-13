@@ -173,9 +173,9 @@ def test_GetV2CamImageCode404_CamNotFound():
 def test_GetV2CamImageCode412(fix):
     fix.connect_to_dll()
     fix.send_react(("CAM|"+camId+"|REC").encode("utf-8"))
-    time.sleep(2)
+    time.sleep(1)
     fix.send_react(("CAM|"+camId+"|REC_STOP").encode("utf-8"))
-    time.sleep(6)
+    time.sleep(1)
     m = dt.datetime.now()
     archtime = m.strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]  # [:-3] убирает 3 последних символа
     data = "Ошибка получения изображения: Камера "+camId+": архив для " + archtime + " не найден"
