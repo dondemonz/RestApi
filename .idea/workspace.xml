@@ -56,14 +56,14 @@
           <entry key="Python Console" value="60" />
           <entry key="dummy" value="139" />
           <entry key="gitignore" value="11" />
-          <entry key="py" value="29687" />
+          <entry key="py" value="29728" />
           <entry key="txt" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="212" />
-          <entry key="Python" value="29747" />
+          <entry key="Python" value="29788" />
         </counts>
       </usages-collector>
     </session>
@@ -94,8 +94,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/test_cam_get_cam_image_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="201" column="20" lean-forward="true" selection-start-line="201" selection-start-column="20" selection-end-line="201" selection-end-column="20" />
+            <state relative-caret-position="153">
+              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -189,8 +189,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="210" />
-    <option name="y" value="108" />
+    <option name="x" value="149" />
+    <option name="y" value="55" />
     <option name="width" value="1712" />
     <option name="height" value="976" />
   </component>
@@ -366,9 +366,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest in test_cam_get_cam_image_v2.py" />
+        <item itemvalue="Python tests.pytest for test_1.test_create_environment" />
         <item itemvalue="Python tests.pytest for test_cam_get_cam_image_v2.test_GetV2CamLiveImageCode200" />
         <item itemvalue="Python tests.pytest for test_cam_get_cam_image_v2.test_GetV2CamImageCode503" />
-        <item itemvalue="Python tests.pytest for test_1.test_create_environment" />
         <item itemvalue="Python tests.pytest for test_z_delete_environment.test_delete_environment" />
       </list>
     </recent_temporary>
@@ -573,22 +573,17 @@
       <option name="project" value="LOCAL" />
       <updated>1552471596619</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="24">
+      <created>1552477944273</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1552477944273</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_z_delete_environment_test_delete_environment - 2019.03.13 at 12h 53m 27s.xml">
-      <configuration name="pytest for test_z_delete_environment.test_delete_environment" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_z_delete_environment_test_delete_environment - 2019.03.13 at 13h 07m 14s.xml">
-      <configuration name="pytest for test_z_delete_environment.test_delete_environment" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_1_test_create_environment - 2019.03.13 at 14h 28m 43s.xml">
-      <configuration name="pytest for test_1.test_create_environment" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_cam_get_cam_image_v2_test_GetV2CamImageCode503 - 2019.03.13 at 14h 29m 13s.xml">
-      <configuration name="pytest for test_cam_get_cam_image_v2.test_GetV2CamImageCode503" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_for_test_cam_get_cam_image_v2_test_GetV2CamLiveImageCode200 - 2019.03.13 at 14h 30m 04s.xml">
       <configuration name="pytest for test_cam_get_cam_image_v2.test_GetV2CamLiveImageCode200" configurationId="tests" />
     </history-entry>
@@ -607,6 +602,18 @@
     <history-entry file="pytest_in_test_cam_get_cam_image_v2_py - 2019.03.13 at 14h 48m 38s.xml">
       <configuration name="pytest in test_cam_get_cam_image_v2.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_in_test_cam_get_cam_image_v2_py - 2019.03.13 at 14h 51m 30s.xml">
+      <configuration name="pytest in test_cam_get_cam_image_v2.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_cam_get_cam_image_v2_py - 2019.03.13 at 16h 16m 18s.xml">
+      <configuration name="pytest in test_cam_get_cam_image_v2.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_cam_get_cam_image_v2_py - 2019.03.13 at 16h 17m 30s.xml">
+      <configuration name="pytest in test_cam_get_cam_image_v2.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_cam_get_cam_image_v2_py - 2019.03.13 at 16h 18m 14s.xml">
+      <configuration name="pytest in test_cam_get_cam_image_v2.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -618,7 +625,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="210" y="108" width="1712" height="976" extended-state="1" />
+    <frame x="149" y="55" width="1712" height="976" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49846154" visible="true" weight="0.20489845" />
@@ -947,8 +954,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_cam_get_cam_image_v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="201" column="20" lean-forward="true" selection-start-line="201" selection-start-column="20" selection-end-line="201" selection-end-column="20" />
+        <state relative-caret-position="153">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

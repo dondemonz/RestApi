@@ -30,10 +30,9 @@ def test_reload_video_exe():
         # check whether the process name matches
         if proc.name() == PROCNAME:
             proc.kill()
-
+    time.sleep(5)
 
 def test_GetV2CamLiveImageCode200():
-    time.sleep(10)
     # data = "success"
     response = requests.get(url="http://"+slave_ip+":8888/api/v2/cameras/"+camId+"/image", auth=auth, stream=True)
     user_resp_code = "200"
@@ -56,13 +55,11 @@ def test_GetV2CamLiveImageCode200():
     """
 
 def test_GetV2CamLiveImageCode401():
-    time.sleep(10)
     response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image", auth=("", ""), stream=True)
     user_resp_code = "401"
     assert str(response.status_code) == user_resp_code
 
 def test_GetV2CamLiveImageCode404_CamNotFound():
-    time.sleep(10)
     data = "Unknown CAM id:0"
     response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/0/image", auth=auth, stream=True)
     user_resp_code = "404"
@@ -75,7 +72,6 @@ def test_GetV2CamLiveImageCode404_CamNotFound():
 # Запрос на получение масштабированного кадра живого видео с камеры
 def test_GetV2CamLiveScaleImageCode200():
     # data = "success"
-    time.sleep(10)
     response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image?scale_y=500&scale_x=500", auth=auth, stream=True)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
@@ -86,7 +82,6 @@ def test_GetV2CamLiveScaleImageCode200():
 
 
 def test_GetV2CamLiveScaleImageCode200WithOnlyX():
-    time.sleep(10)
     # data = "success"
     response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/45/image?scale_x=500", auth=auth, stream=True)
     user_resp_code = "200"
@@ -97,7 +92,6 @@ def test_GetV2CamLiveScaleImageCode200WithOnlyX():
     del response
 
 def test_GetV2CamLiveScaleImageCode200WithOnlyY():
-    time.sleep(10)
     # data = "success"
     response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/45/image?scale_y=500", auth=auth, stream=True)
     user_resp_code = "200"
@@ -108,14 +102,12 @@ def test_GetV2CamLiveScaleImageCode200WithOnlyY():
     del response
 
 def test_GetV2CamLiveScaleImageCode401():
-    time.sleep(10)
     # data = "success"
     response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image?scale_y=500&scale_x=500", auth=("", ""), stream=True)
     user_resp_code = "401"
     assert str(response.status_code) == user_resp_code
 
 def test_GetV2CamLiveScaleImageCode404():
-    time.sleep(10)
     data = "Unknown CAM id:0"
     response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/0/image?scale_y=500", auth=auth, stream=True)
     user_resp_code = "404"
@@ -127,7 +119,6 @@ def test_GetV2CamLiveScaleImageCode404():
 
 # Запросы на получение кадра с камеры
 def test_GetV2CamImageCode200(fix):
-    time.sleep(10)
     fix.connect_to_dll()
     fix.send_react(("CAM|"+camId+"|REC").encode("utf-8"))
     time.sleep(2)
@@ -151,7 +142,6 @@ def test_GetV2CamImageCode200(fix):
     del response
 
 def test_GetV2CamImageCode400_IncorrectTime():
-    time.sleep(10)
     data1 = "time (2015-11-19T18:480:32) is not in valid format or incorrect. Expected format: yyyy-MM-dd hh:mm:ss[.zzz]"
     response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image/2015-11-19T18:480:32", auth=auth, stream=True)
     user_resp_code = "400"
@@ -162,7 +152,6 @@ def test_GetV2CamImageCode400_IncorrectTime():
     assert data1 == n
 
 def test_GetV2CamImageCode401():
-    time.sleep(10)
     m = dt.datetime.now()
     archtime = m.strftime("%Y-%m-%d %H:%M:%S")
     response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image/"+archtime, auth=("", ""), stream=True)
@@ -170,7 +159,6 @@ def test_GetV2CamImageCode401():
     assert str(response.status_code) == user_resp_code
 
 def test_GetV2CamImageCode404_CamNotFound():
-    time.sleep(10)
     data1 = "Unknown CAM id:0"
     m = dt.datetime.now()
     archtime = m.strftime("%Y-%m-%d %H:%M:%S")
@@ -183,7 +171,6 @@ def test_GetV2CamImageCode404_CamNotFound():
     assert data1 == n
 
 def test_GetV2CamImageCode412(fix):
-    time.sleep(10)
     fix.connect_to_dll()
     fix.send_react(("CAM|"+camId+"|REC").encode("utf-8"))
     time.sleep(2)
@@ -203,7 +190,6 @@ def test_GetV2CamImageCode412(fix):
 
 
 def test_GetV2CamImageCode503():
-    time.sleep(10)
     i = 0
     while i < 50:
         m = dt.datetime.now()
