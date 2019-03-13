@@ -30,14 +30,13 @@ def test_reload_video_exe():
         # check whether the process name matches
         if proc.name() == PROCNAME:
             proc.kill()
-    time.sleep(10)
+
 
 def test_GetV2CamLiveImageCode200():
     time.sleep(10)
     # data = "success"
     response = requests.get(url="http://"+slave_ip+":8888/api/v2/cameras/"+camId+"/image", auth=auth, stream=True)
     user_resp_code = "200"
-    time.sleep(10)
     assert str(response.status_code) == user_resp_code
 
     # контент картинки, почему то есть проблемы с сохранением файла при этом выводе
@@ -47,7 +46,7 @@ def test_GetV2CamLiveImageCode200():
     with open(exportPath+'img.png', 'wb') as out_file:
         shutil.copyfileobj(response.raw, out_file)
     del response
-    time.sleep(10)
+
 
     """
     # сразу показать картинку
@@ -79,13 +78,12 @@ def test_GetV2CamLiveScaleImageCode200():
     time.sleep(10)
     response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image?scale_y=500&scale_x=500", auth=auth, stream=True)
     user_resp_code = "200"
-    time.sleep(10)
     assert str(response.status_code) == user_resp_code
     # сохранить картинку в файл
     with open(exportPath+'img1.png', 'wb') as out_file:
         shutil.copyfileobj(response.raw, out_file)
     del response
-    time.sleep(10)
+
 
 def test_GetV2CamLiveScaleImageCode200WithOnlyX():
     time.sleep(10)
@@ -142,7 +140,6 @@ def test_GetV2CamImageCode200(fix):
     time.sleep(5)
     response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image/"+archtime, auth=auth, stream=True)
     user_resp_code = "200"
-    time.sleep(10)
     assert str(response.status_code) == user_resp_code
     # print(response)
     # контент картинки, почему то есть проблемы с сохранением файла при этом выводе
@@ -152,7 +149,6 @@ def test_GetV2CamImageCode200(fix):
     with open(exportPath+'img.png', 'wb') as out_file:
         shutil.copyfileobj(response.raw, out_file)
     del response
-    time.sleep(10)
 
 def test_GetV2CamImageCode400_IncorrectTime():
     time.sleep(10)
@@ -222,7 +218,6 @@ def test_GetV2CamImageCode503():
     archtime = m.strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
     response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image/" + archtime, auth=auth)
     user_resp_code = "503"
-    time.sleep(10)
     assert str(response.status_code) == user_resp_code
 
 
