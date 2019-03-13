@@ -121,14 +121,13 @@ def test_GetV2CamLiveScaleImageCode404():
 def test_GetV2CamImageCode200(fix):
     fix.connect_to_dll()
     fix.send_react(("CAM|"+camId+"|REC").encode("utf-8"))
-    time.sleep(2)
+    time.sleep(1)
     # нужен ключ реестра deltaArchive который создается в первом тесте этого раздела
     m = dt.datetime.now()
     archtime = m.strftime("%Y%m%dT%H%M%S")
-    # print(archtime)
-    time.sleep(2)
+    time.sleep(1)
     fix.send_react(("CAM|"+camId+"|REC_STOP").encode("utf-8"))
-    time.sleep(5)
+    time.sleep(1)
     response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image/"+archtime, auth=auth, stream=True)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
