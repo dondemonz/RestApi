@@ -14,7 +14,6 @@ def test_GetV1SubscriptionByIdCode200And401AndPostV1SubscriptionCode201AndSendPo
     data1 = json.loads(body)
     subscription_id = data1["data"]["id"]
 
-    fix.connect_to_dll()
     fix.send_event(message="TEST|777|EVENT".encode("utf-8"))
     time.sleep(3)
     # print(fix.cb1)

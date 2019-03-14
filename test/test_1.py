@@ -4,7 +4,6 @@ from model.input_data import *
 
 
 def test_create_environment(fix):
-    fix.connect_to_dll()
     fix.send_event(message=("CORE||CREATE_OBJECT|objtype<DEPARTMENT>,objid<"+departmentId+">,parent_id<1>,name<Test_Department>").encode("utf-8"))
     # если будет идеи, то сделать проверку на создание объектов IsObjectExists, но походу библиотека iidk не поддерживает
     fix.send_event(message=("CORE||CREATE_OBJECT|objtype<PERSON>,objid<1.999>,parent_id<"+personId+">,name<Test_user>").encode("utf-8"))

@@ -1,7 +1,6 @@
 from model.input_data import *
 
 def test_delete_environment(fix):
-    fix.connect_to_dll()
     fix.send_event(message="CORE||DELETE_OBJECT|objtype<PERSON>,objid<1.999>".encode("utf-8"))
     fix.send_event(message="CORE||DELETE_OBJECT|objtype<DEPARTMENT>,objid<1.999>".encode("utf-8"))
     fix.send_event(message=("CORE||DELETE_OBJECT|objtype<RTSP_SERVER>,objid<"+objId+">").encode("utf-8"))

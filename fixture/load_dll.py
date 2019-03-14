@@ -24,16 +24,11 @@ class DllHelper:
         self.cb3 = cb3
 
 
-    def open_app(self):
-        my_dll = self.my_dll
-        my_dll.windll.LoadLibrary("iidk.dll")
-
     def callback(self, cb1, cb2, cb3):
         # сохранение параметра в общей переменной
         # print(cb1, cb2, cb3)
         self.cb1 = cb1
         return 0
-
 
     def callback_proto(self):
         global CallbackProto
@@ -42,8 +37,6 @@ class DllHelper:
     def callback_wrapper(self):
         global CallbackWrapper
         CallbackWrapper = CallbackProto(self.callback)
-
-
 
     def connect(self):
         self.my_dll.ConnectEx.argtypes = [c_char_p, c_char_p, c_char_p, CallbackProto, c_uint32, c_int, c_uint32]
@@ -56,12 +49,14 @@ class DllHelper:
         """
 
     def send_react(self, message):
+        self.connect_to_dll()
         # message = ("CORE", "RANDOM", "CREATE_OBJECT", "objtype", "CAM", "objid", "999999", "parent_id", "2", "name", "Test Camera")
         msg = c_char_p(message)
         self.my_dll.SendDoReact.argtypes = [c_char_p, c_char_p]
         self.my_dll.SendDoReact(p3, msg)
 
     def send_event(self, message):
+        self.connect_to_dll()
         # message = "CORE||CREATE_OBJECT|objtype<CAM>,objid<99>,parent_id<2>,name<Test_Camera>".encode("utf-8")
         msg = c_char_p(message)
         self.my_dll.SendMsg.argtypes = [c_char_p, c_char_p]

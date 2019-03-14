@@ -5,7 +5,6 @@ import time
 
 def test_DeleteV1PersonsCode200(fix):
     data = {"status": "success"}
-    fix.connect_to_dll()
     fix.send_event(message=(("CORE||CREATE_OBJECT|objtype<PERSON>,objid<1.888>,parent_id<1.999>,name<Test_Person_For_Delet>").encode("utf-8")))
     time.sleep(3)
     response = requests.delete(url="http://" + slave_ip + ":8888/api/v1/persons/1.888", auth=auth)

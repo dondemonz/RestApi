@@ -21,7 +21,6 @@ def test_reload_video_exe(fix):
             proc.kill()
     time.sleep(5)
     # фильтр создается и добавляется в рест в тесте создания объектов, дублируется тут для того, чтобы можно было запускать по кругу тесты без создания объектов. В конце тестов есть сброс фильтра в ресте.
-    fix.connect_to_dll()
     fix.send_event(message=("CORE||UPDATE_OBJECT|objtype<REST_API>,objid<" + objId + ">,parent_id<" + slave + ">,event_filter_id<" + objId + ">").encode("utf-8"))
 
 
@@ -29,7 +28,6 @@ def test_GetV2CameraProtocolCode200(fix):
     data = 2
     m = dt.datetime.now()
     starttime = m.strftime("%Y-%m-%d %H:%M:%S")  # почему иногда использовал "%Y-%m-%d %H:%M:%S", а иногда "%Y%m%dT%H%M%S" - непонятно
-    fix.connect_to_dll()
     fix.send_react(("CAM|"+camId+"|ARM").encode("utf-8"))
     fix.send_react(("CAM|"+camId+"|DISARM").encode("utf-8"))
     time.sleep(1)
@@ -53,7 +51,6 @@ def test_GetV2CameraProtocolCode200WithoutEndTime(fix):
     # v = m.time()
     # print(v)
     starttime = m.strftime("%Y%m%dT%H%M%S")
-    fix.connect_to_dll()
     fix.send_react(("CAM|"+camId+"|ARM").encode("utf-8"))
     fix.send_react(("CAM|"+camId+"|DISARM").encode("utf-8"))
     time.sleep(1)
@@ -74,7 +71,6 @@ def test_GetV2CameraProtocolCode200WithoutEndTimeAndMaxCount(fix):
     # v = m.time()
     # print(v)
     starttime = m.strftime("%Y%m%dT%H%M%S")
-    fix.connect_to_dll()
     fix.send_react(("CAM|"+camId+"|ARM").encode("utf-8"))
     fix.send_react(("CAM|"+camId+"|DISARM").encode("utf-8"))
     time.sleep(1)
@@ -97,7 +93,7 @@ def test_GetV2CameraProtocolCode400():
     n = data1["message"]
     assert data == n
 
-def test_GetV2CameraProtocolCode400IncorrectTime(fix):
+def test_GetV2CameraProtocolCode400IncorrectTime():
     data = "Incorrect parameter:start_time, value:20151119T1848032"
     response = requests.get(url="http://"+slave_ip+":8888/api/v1/cameras/"+camId+"/protocol?start_time=20151119T1848032", auth=auth)
     user_resp_code = "400"
@@ -107,9 +103,8 @@ def test_GetV2CameraProtocolCode400IncorrectTime(fix):
     n = data1["message"]
     assert data == n
 
-def test_GetV2CameraProtocolCode401(fix):
+def test_GetV2CameraProtocolCode401():
     data = {"name": camName}
-    fix.connect_to_dll()
     response = requests.put(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"", headers=headers, data=json.dumps(dict(data)), auth=("", ""))
     user_resp_code = "401"
     assert str(response.status_code) == user_resp_code
@@ -117,7 +112,6 @@ def test_GetV2CameraProtocolCode401(fix):
 # Тесты фильтров для протокола
 def test_GetV2CameraProtocolCode200EventFilterEmpty(fix):
     data = 0
-    fix.connect_to_dll()
     fix.send_event(message=("CORE||UPDATE_OBJECT|objtype<EVENT_FILTER>,objid<"+objId+">,parent_id<1>,EVENT.action.count<0>,EVENT.type.count<0>,EVENT.id.count<0>,EVENT.rule.count<0>").encode("utf-8"))
     m = dt.datetime.now()
     starttime = m.strftime("%Y-%m-%d %H:%M:%S")
@@ -135,7 +129,6 @@ def test_GetV2CameraProtocolCode200EventFilterEmpty(fix):
 
 def test_GetV2CameraProtocolCode200EventFilterAllowAll(fix):
     data = 2
-    fix.connect_to_dll()
     fix.send_event(message=(("CORE||UPDATE_OBJECT|objtype<EVENT_FILTER>,objid<"+objId+">,parent_id<1>,EVENT.action.count<1>,EVENT.type.count<1>,EVENT.id.count<1>,EVENT.rule.count<1>,EVENT.rule.0<1>,EVENT.id.0<>,EVENT.type.0<CAM>,EVENT.action.0<>").encode("utf-8")))
     time.sleep(3)
     m = dt.datetime.now()
@@ -155,7 +148,6 @@ def test_GetV2CameraProtocolCode200EventFilterAllowAll(fix):
 def test_GetV2CameraProtocolCode200EventFilterAllowId(fix):
     data = 2
     data2 = 0
-    fix.connect_to_dll()
     fix.send_event(message=(("CORE||UPDATE_OBJECT|objtype<EVENT_FILTER>,objid<"+objId+">,parent_id<1>,EVENT.action.count<1>,EVENT.type.count<1>,EVENT.id.count<1>,EVENT.rule.count<1>,EVENT.rule.0<1>,EVENT.id.0<"+camId+">,EVENT.type.0<CAM>,EVENT.action.0<>").encode("utf-8")))
     time.sleep(3)
     m = dt.datetime.now()
@@ -184,7 +176,6 @@ def test_GetV2CameraProtocolCode200EventFilterAllowId(fix):
 def test_GetV2CameraProtocolCode200EventFilterAllowEvent(fix):
     data = 1
     data2 = 1
-    fix.connect_to_dll()
     fix.send_event(message=(("CORE||UPDATE_OBJECT|objtype<EVENT_FILTER>,objid<"+objId+">,parent_id<1>,EVENT.action.count<1>,EVENT.type.count<1>,EVENT.id.count<1>,EVENT.rule.count<1>,EVENT.rule.0<1>,EVENT.id.0<>,EVENT.type.0<CAM>,EVENT.action.0<ARMED>").encode("utf-8")))
     m = dt.datetime.now()
     starttime = m.strftime("%Y-%m-%d %H:%M:%S")
@@ -212,7 +203,6 @@ def test_GetV2CameraProtocolCode200EventFilterAllowEvent(fix):
 def test_GetV2CameraProtocolCode200EventFilterAllowIdForbidAll(fix):
     data = 2
     data2 = 0
-    fix.connect_to_dll()
     fix.send_event(message=(("CORE||UPDATE_OBJECT|objtype<EVENT_FILTER>,objid<"+objId+">,parent_id<1>,EVENT.action.count<2>,EVENT.type.count<2>,EVENT.id.count<2>,EVENT.rule.count<2>,EVENT.rule.0<1>,EVENT.id.0<"+camId+">,EVENT.type.0<CAM>,EVENT.action.0<>,EVENT.rule.1<0>,EVENT.id.1<>,EVENT.type.1<CAM>,EVENT.action.1<>").encode("utf-8")))
     m = dt.datetime.now()
     starttime = m.strftime("%Y-%m-%d %H:%M:%S")
@@ -240,7 +230,6 @@ def test_GetV2CameraProtocolCode200EventFilterAllowIdForbidAll(fix):
 def test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId(fix):
     data = 0
     data2 = 2
-    fix.connect_to_dll()
     fix.send_event(message=(("CORE||UPDATE_OBJECT|objtype<EVENT_FILTER>,objid<"+objId+">,parent_id<1>,EVENT.action.count<2>,EVENT.type.count<2>,EVENT.id.count<2>,EVENT.rule.count<2>,EVENT.rule.0<0>,EVENT.id.0<"+camId+">,EVENT.type.0<CAM>,EVENT.action.0<>,EVENT.rule.1<1>,EVENT.id.1<>,EVENT.type.1<CAM>,EVENT.action.1<>").encode("utf-8")))
     m = dt.datetime.now()
     starttime = m.strftime("%Y-%m-%d %H:%M:%S")
@@ -268,7 +257,6 @@ def test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId(fix):
 def test_GetV2CameraProtocolCode200EventFilterAllowEventForbidAll(fix):
     data = 1
     data2 = 1
-    fix.connect_to_dll()
     fix.send_event(message=(("CORE||UPDATE_OBJECT|objtype<EVENT_FILTER>,objid<"+objId+">,parent_id<1>,EVENT.action.count<2>,EVENT.type.count<2>,EVENT.id.count<2>,EVENT.rule.count<2>,EVENT.rule.0<1>,EVENT.id.0<>,EVENT.type.0<CAM>,EVENT.action.0<DISARMED>,EVENT.rule.1<0>,EVENT.id.1<>,EVENT.type.1<CAM>,EVENT.action.1<>").encode("utf-8")))
     m = dt.datetime.now()
     starttime = m.strftime("%Y-%m-%d %H:%M:%S")
@@ -296,7 +284,6 @@ def test_GetV2CameraProtocolCode200EventFilterAllowEventForbidAll(fix):
 def test_GetV2CameraProtocolCode200EventFilterAllowAllForbidEvent(fix):
     data = 1
     data2 = 1
-    fix.connect_to_dll()
     fix.send_event(message=(("CORE||UPDATE_OBJECT|objtype<EVENT_FILTER>,objid<"+objId+">,parent_id<1>,EVENT.action.count<2>,EVENT.type.count<2>,EVENT.id.count<2>,EVENT.rule.count<2>,EVENT.rule.0<0>,EVENT.id.0<>,EVENT.type.0<CAM>,EVENT.action.0<DISARMED>,EVENT.rule.1<1>,EVENT.id.1<>,EVENT.type.1<CAM>,EVENT.action.1<>").encode("utf-8")))
     time.sleep(1)
     m = dt.datetime.now()

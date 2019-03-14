@@ -9,7 +9,6 @@ import datetime as dt
 def test_GetV1TaskByIdCode200and401andPostV1Code201(fix):
     m = dt.datetime.now()
     starttime = m.strftime("%Y-%m-%d %H:%M:%S")
-    fix.connect_to_dll()
     fix.send_react(("CAM|"+camId+"|REC").encode("utf-8"))
     time.sleep(4)
     fix.send_react(("CAM|"+camId+"|REC_STOP").encode("utf-8"))
@@ -41,7 +40,6 @@ def test_GetV1TaskByIdCode200and401andPostV1Code201(fix):
 
 def test_PostV1TaskCode400(fix):
     data1 = "Appropriate ARCH_CNV is not available."
-    fix.connect_to_dll()
     fix.send_event(message=(("CORE|RANDOM|DISABLE_OBJECT|objtype<ARCH_CNV>,objid<"+objId+">,parent_id<"+slave+">").encode("utf-8")))
     m = dt.datetime.now()
     starttime = m.strftime("%Y-%m-%d %H:%M:%S")
@@ -82,7 +80,6 @@ def test_PostV1TaskCode404():
 def test_PostV1TaskCode401(fix):
     m = dt.datetime.now()
     starttime = m.strftime("%Y-%m-%d %H:%M:%S")
-    fix.connect_to_dll()
     fix.send_react(("CAM|"+camId+"|REC").encode("utf-8"))
     time.sleep(4)
     fix.send_react(("CAM|"+camId+"|REC_STOP").encode("utf-8"))

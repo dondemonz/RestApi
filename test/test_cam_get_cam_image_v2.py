@@ -119,7 +119,6 @@ def test_GetV2CamLiveScaleImageCode404():
 
 # Запросы на получение кадра с камеры
 def test_GetV2CamImageCode200(fix):
-    fix.connect_to_dll()
     fix.send_react(("CAM|"+camId+"|REC").encode("utf-8"))
     time.sleep(1)
     # нужен ключ реестра deltaArchive который создается в первом тесте этого раздела
@@ -170,7 +169,6 @@ def test_GetV2CamImageCode404_CamNotFound():
     assert data1 == n
 
 def test_GetV2CamImageCode412(fix):
-    fix.connect_to_dll()
     fix.send_react(("CAM|"+camId+"|REC").encode("utf-8"))
     time.sleep(1)
     fix.send_react(("CAM|"+camId+"|REC_STOP").encode("utf-8"))

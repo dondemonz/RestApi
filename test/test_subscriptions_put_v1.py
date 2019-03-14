@@ -23,7 +23,6 @@ def test_PutV1SubscriptionsCode200And401AndSendPostCallback(fix):
     subscription_id1 = data1["data"]["id"]
     assert subscription_id == subscription_id1
 
-    fix.connect_to_dll()
     fix.send_event(message="OBJECT|555|ACTION".encode("utf-8"))
     time.sleep(3)
     # print(fix.cb1)
