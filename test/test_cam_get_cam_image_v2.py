@@ -187,6 +187,7 @@ def test_GetV2CamImageCode412(fix):
 
 
 def test_GetV2CamImageCode503():
+    time.sleep(5)
     i = 0
     while i < 50:
         m = dt.datetime.now()
@@ -196,7 +197,6 @@ def test_GetV2CamImageCode503():
             response.raise_for_status()  # Raise error in case of failure Далее ловим ошибку, но продолжаем посылать запросы
         except requests.exceptions.RequestException:
             i += 1
-
     m = dt.datetime.now()
     archtime = m.strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
     response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image/" + archtime, auth=auth)

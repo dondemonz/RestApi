@@ -12,7 +12,7 @@ objId = "999"
 camId1 = "45"
 personId = "1.999"
 departmentId = "1.999"
-exportPath = "A:\\export\\"
+exportPath = "C:\\export\\"
 
 tour_id = "0"  # Id настроенного тура
 preset_id = "1"  # Id настроенной препозиции

@@ -41,7 +41,7 @@ class DllHelper:
     def connect(self):
         self.my_dll.ConnectEx.argtypes = [c_char_p, c_char_p, c_char_p, CallbackProto, c_uint32, c_int, c_uint32]
         self.my_dll.ConnectEx(p1, p2, p3, CallbackWrapper, p5, p6, p7)
-        """ проверка isConnected
+        """проверка isconected
         if x == 0:
             print("error")
         else:
