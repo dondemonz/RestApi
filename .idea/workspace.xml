@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b827ad91-0da6-4220-b73a-a0177b1f9ff6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/input_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/input_data.py" afterDir="false" />
-    </list>
+    <list default="true" id="b827ad91-0da6-4220-b73a-a0177b1f9ff6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +20,8 @@
               <caret line="78" selection-start-line="78" selection-end-line="78" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
-                <marker date="1552904751586" expanded="true" signature="196:201" ph="..." />
-                <marker date="1552904751586" expanded="true" signature="1984:1985" ph="..." />
-                <marker date="1552904751586" expanded="true" signature="2523:2529" ph="..." />
+                <marker date="1552971465691" expanded="true" signature="1953:1954" ph="..." />
+                <marker date="1552971465691" expanded="true" signature="2492:2498" ph="..." />
               </folding>
             </state>
           </provider>
@@ -34,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="68">
+              <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -43,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/input_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="255">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -52,7 +48,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../InstallSecuros/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1329" />
+            <state relative-caret-position="337">
+              <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -102,7 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/new.py" />
         <option value="$PROJECT_DIR$/test/.pytest_cache/test_ptz.py" />
         <option value="$PROJECT_DIR$/test/test_persons.py" />
         <option value="$PROJECT_DIR$/test/test_ptz.py" />
@@ -140,7 +137,6 @@
         <option value="$PROJECT_DIR$/test/test_tasks_export_delete_v1.py" />
         <option value="$PROJECT_DIR$/test/test_tasks_export_get_v1.py" />
         <option value="$PROJECT_DIR$/test/test_cam_post_v2.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/fixture/load_dll.py" />
         <option value="$PROJECT_DIR$/test/test_cam_get_cam_image_v2.py" />
@@ -152,7 +148,9 @@
         <option value="$PROJECT_DIR$/test/test_1.py" />
         <option value="$PROJECT_DIR$/test/test_z_delete_environment.py" />
         <option value="$PROJECT_DIR$/../InstallSecuros/test/InstallSecuros.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/model/input_data.py" />
+        <option value="$PROJECT_DIR$/../InstallSecuros/.gitignore" />
       </list>
     </option>
   </component>
@@ -190,6 +188,23 @@
             <path>
               <item name="RESTAPI" type="b2602c69:ProjectViewProjectNode" />
               <item name="RESTAPI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RESTAPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RESTAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="env" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RESTAPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RESTAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="env" type="462c0819:PsiDirectoryNode" />
+              <item name="Include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RESTAPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RESTAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="env" type="462c0819:PsiDirectoryNode" />
+              <item name="tcl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RESTAPI" type="b2602c69:ProjectViewProjectNode" />
@@ -591,7 +606,28 @@
       <option name="project" value="LOCAL" />
       <updated>1552909498237</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="24">
+      <created>1552971434227</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1552971434227</updated>
+    </task>
+    <task id="LOCAL-00037" summary="24">
+      <created>1552971452664</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1552971452664</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Merge branch 'master' of https://github.com/dondemonz/InstallSecuros&#10;&#10;# Conflicts:&#10;#&#9;.gitignore">
+      <created>1552971514528</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1552971514528</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -637,7 +673,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="131" y="43" width="1712" height="976" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49846154" visible="true" weight="0.20489845" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -681,7 +716,8 @@
     <MESSAGE value="1" />
     <MESSAGE value="2" />
     <MESSAGE value="24" />
-    <option name="LAST_COMMIT_MESSAGE" value="24" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/dondemonz/InstallSecuros&#10;&#10;# Conflicts:&#10;#&#9;.gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/dondemonz/InstallSecuros&#10;&#10;# Conflicts:&#10;#&#9;.gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -931,9 +967,8 @@
           <caret line="78" selection-start-line="78" selection-end-line="78" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
-            <marker date="1552904751586" expanded="true" signature="196:201" ph="..." />
-            <marker date="1552904751586" expanded="true" signature="1984:1985" ph="..." />
-            <marker date="1552904751586" expanded="true" signature="2523:2529" ph="..." />
+            <marker date="1552971465691" expanded="true" signature="1953:1954" ph="..." />
+            <marker date="1552971465691" expanded="true" signature="2492:2498" ph="..." />
           </folding>
         </state>
       </provider>
@@ -967,21 +1002,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="68">
+          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/input_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../InstallSecuros/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1329" />
+        <state relative-caret-position="337">
+          <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+        </state>
       </provider>
     </entry>
   </component>
