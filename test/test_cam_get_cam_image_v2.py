@@ -33,6 +33,7 @@ def test_reload_video_exe():
     time.sleep(5)
 
 def test_GetV2CamLiveImageCode200():
+    time.sleep(5)
     # data = "success"
     response = requests.get(url="http://"+slave_ip+":8888/api/v2/cameras/"+camId+"/image", auth=auth, stream=True)
     user_resp_code = "200"
@@ -197,6 +198,7 @@ def test_GetV2CamImageCode503():
             response.raise_for_status()  # Raise error in case of failure Далее ловим ошибку, но продолжаем посылать запросы
         except requests.exceptions.RequestException:
             i += 1
+    time.sleep(1)
     m = dt.datetime.now()
     archtime = m.strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
     response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image/" + archtime, auth=auth)
