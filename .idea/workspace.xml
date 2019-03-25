@@ -19,13 +19,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/test_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state>
+              <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/test_z_delete_environment.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -35,19 +35,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/env/Lib/tarfile.py">
+        <entry file="file://$PROJECT_DIR$/test/test_cam_get_cam_image_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="639" column="12" lean-forward="true" selection-start-line="639" selection-start-column="12" selection-end-line="639" selection-end-column="12" />
+            <state relative-caret-position="80">
+              <caret line="130" column="4" selection-start-line="130" selection-start-column="4" selection-end-line="130" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/test_cam_get_cam_image_v2.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test_cam_get_protocol_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="189" column="32" lean-forward="true" selection-start-line="189" selection-start-column="32" selection-end-line="189" selection-end-column="32" />
+            <state relative-caret-position="382">
+              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -150,8 +153,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="200" />
-    <option name="y" value="79" />
+    <option name="x" value="207" />
+    <option name="y" value="84" />
     <option name="width" value="1400" />
     <option name="height" value="863" />
   </component>
@@ -240,22 +243,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_cam_get_cam_image_v2.py">
-    <configuration name="pytest for InstallSecuros.test5" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="InstallSecuros" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../InstallSecuros/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;InstallSecuros.test5&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.pytest in test">
     <configuration name="pytest for test_1.test_create_environment" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="RESTAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -271,7 +259,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_cam_get_cam_image_v2.test_GetV2CamImageCode503" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_z_delete_environment.test_delete_environment" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="RESTAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -282,11 +270,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_cam_get_cam_image_v2.test_GetV2CamImageCode503&quot;" />
+      <option name="_new_target" value="&quot;test_z_delete_environment.test_delete_environment&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_cam_get_cam_image_v2.test_GetV2CamLiveImageCode200" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="RESTAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -297,8 +285,8 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_cam_get_cam_image_v2.test_GetV2CamLiveImageCode200&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="pytest in test_cam_get_cam_image_v2.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -316,20 +304,35 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_cam_get_protocol_v2.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="RESTAPI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_cam_get_protocol_v2.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python tests.pytest for InstallSecuros.test5" />
       <item itemvalue="Python tests.pytest for test_1.test_create_environment" />
-      <item itemvalue="Python tests.pytest for test_cam_get_cam_image_v2.test_GetV2CamLiveImageCode200" />
-      <item itemvalue="Python tests.pytest for test_cam_get_cam_image_v2.test_GetV2CamImageCode503" />
       <item itemvalue="Python tests.pytest in test_cam_get_cam_image_v2.py" />
+      <item itemvalue="Python tests.pytest for test_z_delete_environment.test_delete_environment" />
+      <item itemvalue="Python tests.pytest in test" />
+      <item itemvalue="Python tests.pytest in test_cam_get_protocol_v2.py" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in test_cam_get_cam_image_v2.py" />
-        <item itemvalue="Python tests.pytest for test_cam_get_cam_image_v2.test_GetV2CamImageCode503" />
-        <item itemvalue="Python tests.pytest for test_cam_get_cam_image_v2.test_GetV2CamLiveImageCode200" />
+        <item itemvalue="Python tests.pytest in test" />
+        <item itemvalue="Python tests.pytest for test_z_delete_environment.test_delete_environment" />
         <item itemvalue="Python tests.pytest for test_1.test_create_environment" />
-        <item itemvalue="Python tests.pytest for InstallSecuros.test5" />
+        <item itemvalue="Python tests.pytest in test_cam_get_protocol_v2.py" />
+        <item itemvalue="Python tests.pytest in test_cam_get_cam_image_v2.py" />
       </list>
     </recent_temporary>
   </component>
@@ -589,39 +592,46 @@
       <option name="project" value="LOCAL" />
       <updated>1552971334161</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="24">
+      <created>1553257421772</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1553257421772</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_test - 2019.03.22 at 15h 14m 18s.xml">
+    <history-entry file="pytest_in_test_cam_get_protocol_v2_py - 2019.03.25 at 10h 19m 11s.xml">
+      <configuration name="pytest in test_cam_get_protocol_v2.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_z_delete_environment_test_delete_environment - 2019.03.25 at 10h 19m 17s.xml">
+      <configuration name="pytest for test_z_delete_environment.test_delete_environment" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test - 2019.03.25 at 10h 21m 18s.xml">
       <configuration name="pytest in test" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_1_test_create_environment - 2019.03.22 at 15h 17m 34s.xml">
+    <history-entry file="pytest_for_test_z_delete_environment_test_delete_environment - 2019.03.25 at 10h 35m 05s.xml">
+      <configuration name="pytest for test_z_delete_environment.test_delete_environment" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_1_test_create_environment - 2019.03.25 at 10h 35m 11s.xml">
       <configuration name="pytest for test_1.test_create_environment" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_cam_get_cam_image_v2_test_GetV2CamLiveImageCode200 - 2019.03.22 at 15h 17m 42s.xml">
-      <configuration name="pytest for test_cam_get_cam_image_v2.test_GetV2CamLiveImageCode200" configurationId="tests" />
+    <history-entry file="pytest_for_test_z_delete_environment_test_delete_environment - 2019.03.25 at 10h 35m 19s.xml">
+      <configuration name="pytest for test_z_delete_environment.test_delete_environment" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_cam_get_cam_image_v2_test_GetV2CamImageCode503 - 2019.03.22 at 15h 18m 28s.xml">
-      <configuration name="pytest for test_cam_get_cam_image_v2.test_GetV2CamImageCode503" configurationId="tests" />
+    <history-entry file="pytest_in_test - 2019.03.25 at 10h 37m 18s.xml">
+      <configuration name="pytest in test" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_cam_get_cam_image_v2_test_GetV2CamImageCode503 - 2019.03.22 at 15h 19m 02s.xml">
-      <configuration name="pytest for test_cam_get_cam_image_v2.test_GetV2CamImageCode503" configurationId="tests" />
+    <history-entry file="pytest_for_test_z_delete_environment_test_delete_environment - 2019.03.25 at 10h 45m 08s.xml">
+      <configuration name="pytest for test_z_delete_environment.test_delete_environment" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_cam_get_cam_image_v2_py - 2019.03.22 at 15h 19m 44s.xml">
-      <configuration name="pytest in test_cam_get_cam_image_v2.py" configurationId="tests" />
+    <history-entry file="pytest_in_test - 2019.03.25 at 10h 47m 21s.xml">
+      <configuration name="pytest in test" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_cam_get_cam_image_v2_test_GetV2CamImageCode503 - 2019.03.22 at 15h 21m 05s.xml">
-      <configuration name="pytest for test_cam_get_cam_image_v2.test_GetV2CamImageCode503" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_cam_get_cam_image_v2_test_GetV2CamImageCode503 - 2019.03.22 at 15h 21m 49s.xml">
-      <configuration name="pytest for test_cam_get_cam_image_v2.test_GetV2CamImageCode503" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_cam_get_cam_image_v2_test_GetV2CamImageCode503 - 2019.03.22 at 15h 22m 08s.xml">
-      <configuration name="pytest for test_cam_get_cam_image_v2.test_GetV2CamImageCode503" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_cam_get_cam_image_v2_py - 2019.03.22 at 15h 22m 55s.xml">
-      <configuration name="pytest in test_cam_get_cam_image_v2.py" configurationId="tests" />
+    <history-entry file="pytest_in_test - 2019.03.25 at 13h 45m 37s.xml">
+      <configuration name="pytest in test" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -634,7 +644,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="200" y="79" width="1400" height="863" extended-state="0" />
+    <frame x="207" y="84" width="1400" height="863" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49846154" visible="true" weight="0.20484582" />
@@ -648,9 +658,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4990151" weight="0.32824427" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4996717" weight="0.32876712" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.6372981" weight="0.32876712" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32924962" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.28340676" side_tool="true" weight="0.3958904" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.36270192" side_tool="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32924962" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -918,16 +928,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/test/test_cam_get_protocol_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="144" column="37" selection-start-line="144" selection-start-column="37" selection-end-line="144" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/env/Lib/shutil.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
@@ -952,20 +952,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/input_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../InstallSecuros/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -980,20 +966,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_cam_get_cam_image_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="130" column="4" selection-start-line="130" selection-start-column="4" selection-end-line="130" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/input_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_cam_get_protocol_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_z_delete_environment.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_cam_get_cam_image_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="189" column="32" lean-forward="true" selection-start-line="189" selection-start-column="32" selection-end-line="189" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
