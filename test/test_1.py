@@ -32,8 +32,6 @@ def test_test(fix):
         fix.send_event(("CAM|202|ARCH_GET_RECORDS").encode("utf-8")) yu
     i += 1
 """
-"""
-def test_test(fix):
-    fix.connect_to_dll()
-    fix.send_event(message=("CORE||CREATE_OBJECT|objtype<ACTIVEX>,objid<" + objId + ">,parent_id<" + slave + ">,name<Test_IIDK_Interface>").encode("utf-8"))
-"""
+
+
+    # fix.send_event(message=("CORE||CREATE_OBJECT|objtype<ACTIVEX>,objid<" + objId + ">,parent_id<" + slave + ">,name<Test_IIDK_Interface>").encode("utf-8"))
