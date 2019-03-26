@@ -11,7 +11,7 @@ psutil
 pytest-shutil
 py
 pycparser
-pytest
+pytest==3.10.1
 requests
 selenium
 six
