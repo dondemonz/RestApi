@@ -88,24 +88,28 @@ def test_GetV2CamLiveScaleImageCode200():
 
 
 def test_GetV2CamLiveScaleImageCode200WithOnlyX():
-    time.sleep(1)
+    time.sleep(2)
     # data = "success"
     response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/45/image?scale_x=500", auth=auth, stream=True)
     user_resp_code = "200"
+    time.sleep(2)
     assert str(response.status_code) == user_resp_code
     # сохранить картинку в файл
-    with open(exportPath+'img.png', 'wb') as out_file:
+    time.sleep(2)
+    with open(exportPath+'img2.png', 'wb') as out_file:
         shutil.copyfileobj(response.raw, out_file)
     del response
 
 def test_GetV2CamLiveScaleImageCode200WithOnlyY():
-    time.sleep(1)
+    time.sleep(2)
     # data = "success"
     response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/45/image?scale_y=500", auth=auth, stream=True)
     user_resp_code = "200"
+    time.sleep(2)
     assert str(response.status_code) == user_resp_code
     # сохранить картинку в файл
-    with open(exportPath+'img.png', 'wb') as out_file:
+    time.sleep(2)
+    with open(exportPath+'img3.png', 'wb') as out_file:
         shutil.copyfileobj(response.raw, out_file)
     del response
 
@@ -148,7 +152,7 @@ def test_GetV2CamImageCode200(fix):
 
     time.sleep(1)
     # сохранить картинку в файл
-    with open(exportPath+'img.png', 'wb') as out_file:
+    with open(exportPath+'img4.png', 'wb') as out_file:
         shutil.copyfileobj(response.raw, out_file)
     del response
 
