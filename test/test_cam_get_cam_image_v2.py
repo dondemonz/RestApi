@@ -129,7 +129,7 @@ def test_GetV2CamLiveScaleImageCode404():
 
 # Запросы на получение кадра с камеры 123
 def test_GetV2CamImageCode200(fix):
-    time.sleep(1)
+    time.sleep(3)
     fix.send_react(("CAM|"+camId+"|REC").encode("utf-8"))
     time.sleep(1)
     # нужен ключ реестра deltaArchive который создается в первом тесте этого раздела
