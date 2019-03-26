@@ -1,4 +1,4 @@
-pytest
+pytest==3.10.1
 httplib2
 more-itertools
 oauth2
@@ -11,7 +11,6 @@ psutil
 pytest-shutil
 py
 pycparser
-pytest==3.10.1
 requests
 selenium
 six

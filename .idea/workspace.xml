@@ -33,8 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -80,11 +80,7 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -156,9 +152,9 @@
         <option value="$PROJECT_DIR$/test/test_1.py" />
         <option value="$PROJECT_DIR$/test/test_z_delete_environment.py" />
         <option value="$PROJECT_DIR$/../InstallSecuros/test/InstallSecuros.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/../InstallSecuros/.gitignore" />
         <option value="$PROJECT_DIR$/test/test_cam_get_cam_image_v2.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
@@ -617,7 +613,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553597954321</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="24">
+      <created>1553598582387</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1553598582387</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -663,18 +666,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="207" y="84" width="1400" height="863" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49846154" visible="true" weight="0.20484582" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50153846" side_tool="true" weight="0.2496329" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32824427" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.71659327" visible="true" weight="0.3958904" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.71659327" weight="0.3958904" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39694658" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4990151" weight="0.32824427" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.6372981" weight="0.32876712" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.6372981" visible="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32924962" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.36270192" side_tool="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32924962" />
@@ -1015,17 +1019,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
