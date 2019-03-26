@@ -129,7 +129,7 @@ def test_GetV2CamLiveScaleImageCode404():
 
 # Запросы на получение кадра с камеры 123
 def test_GetV2CamImageCode200(fix):
-    time.sleep(3)
+    time.sleep(1)
     fix.send_react(("CAM|"+camId+"|REC").encode("utf-8"))
     time.sleep(1)
     # нужен ключ реестра deltaArchive который создается в первом тесте этого раздела
@@ -137,15 +137,16 @@ def test_GetV2CamImageCode200(fix):
     archtime = m.strftime("%Y%m%dT%H%M%S")
     time.sleep(3)
     fix.send_react(("CAM|"+camId+"|REC_STOP").encode("utf-8"))
-    time.sleep(5)
+    time.sleep(7)
     response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image/"+archtime, auth=auth, stream=True)
     user_resp_code = "200"
-    time.sleep(1)
+    time.sleep(2)
     assert str(response.status_code) == user_resp_code
     # print(response)
     # контент картинки, почему то есть проблемы с сохранением файла при этом выводе
     # print(response.content)
 
+    time.sleep(1)
     # сохранить картинку в файл
     with open(exportPath+'img.png', 'wb') as out_file:
         shutil.copyfileobj(response.raw, out_file)
