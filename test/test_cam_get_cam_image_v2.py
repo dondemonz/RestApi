@@ -90,7 +90,7 @@ def test_GetV2CamLiveScaleImageCode200():
 def test_GetV2CamLiveScaleImageCode200WithOnlyX():
     time.sleep(2)
     # data = "success"
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/45/image?scale_x=500", auth=auth, stream=True)
+    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image?scale_x=500", auth=auth, stream=True)
     user_resp_code = "200"
     time.sleep(2)
     assert str(response.status_code) == user_resp_code
@@ -103,7 +103,7 @@ def test_GetV2CamLiveScaleImageCode200WithOnlyX():
 def test_GetV2CamLiveScaleImageCode200WithOnlyY():
     time.sleep(2)
     # data = "success"
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/45/image?scale_y=500", auth=auth, stream=True)
+    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image?scale_y=500", auth=auth, stream=True)
     user_resp_code = "200"
     time.sleep(2)
     assert str(response.status_code) == user_resp_code
