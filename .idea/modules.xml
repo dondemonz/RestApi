@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../InstallSecuros/.idea/InstallSecuros.iml" filepath="$PROJECT_DIR$/../InstallSecuros/.idea/InstallSecuros.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/RESTAPI.iml" filepath="$PROJECT_DIR$/.idea/RESTAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../http_event_gate/.idea/http_event_gate.iml" filepath="$PROJECT_DIR$/../http_event_gate/.idea/http_event_gate.iml" />
     </modules>
   </component>
 </project>
