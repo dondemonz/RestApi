@@ -2,7 +2,7 @@ from parse import search
 
 
 def check_event_gate_response(fix):
-    n = (fix.cb1).decode("utf-8")
+    n = fix.cb1.decode("utf-8")
     a = search('"action":"{}"', n)
     action = a.fixed[0]
     i = search('"id":"{}"', n)

@@ -3,6 +3,7 @@
 
 from model.input_data import *
 import os
+import time
 
 
 def test_create_environment(fix):
@@ -34,6 +35,7 @@ def test_create_environment(fix):
         print("Directory ", "C:\\export\\", " Created ")
     else:
         print("Directory ", "C:\\export\\", " already exists")
+    time.sleep(5)
     # как проверить есть ли в системе рест и включить ему фильтр или удалить и создать свой рест?
     # fix.send_event(message=("CORE||DELETE_OBJECT|objtype<REST_API>,objid<*>").encode("utf-8"))
 
