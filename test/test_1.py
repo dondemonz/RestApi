@@ -29,7 +29,11 @@ def test_create_environment(fix):
     fix.send_event(message=("CORE||CREATE_OBJECT|objtype<GRABBER>,objid<" + camId2 + ">,parent_id<" + slave + ">,name<"+camName2+">,type<Axis>,model<default>,format<H264>,ip<172.16.16.10>,user_name<root>,auth_crpt<OLFNDJGNJHDLNPLJ>").encode("utf-8"))  # type=Axis, т.к. без типа будет сильно грузиться система
     fix.send_event(message=("CORE||CREATE_OBJECT|objtype<CAM>,objid<" + camId2 + ">,parent_id<" + camId2 + ">,name<"+camName2+">").encode("utf-8"))
     #создание папки для экспорта тестов cam_get_cam_image
-    os.mkdir("C:\\export\\")
+    if not os.path.exists("C:\\export\\"):
+        os.mkdir("C:\\export\\")
+        print("Directory ", "C:\\export\\", " Created ")
+    else:
+        print("Directory ", "C:\\export\\", " already exists")
     # как проверить есть ли в системе рест и включить ему фильтр или удалить и создать свой рест?
     # fix.send_event(message=("CORE||DELETE_OBJECT|objtype<REST_API>,objid<*>").encode("utf-8"))
 
