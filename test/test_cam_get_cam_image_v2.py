@@ -36,7 +36,7 @@ def test_reload_video_exe():
 def test_GetV2CamLiveImageCode200():
     time.sleep(1)
     # data = "success"
-    response = requests.get(url="http://"+slave_ip+":8888/api/v2/cameras/"+camId+"/image", auth=auth, stream=True)
+    response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v2/cameras/"+camId+"/image", auth=auth, stream=True)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
 
@@ -58,14 +58,14 @@ def test_GetV2CamLiveImageCode200():
 
 def test_GetV2CamLiveImageCode401():
     time.sleep(1)
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image", auth=("", ""), stream=True)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/image", auth=("", ""), stream=True)
     user_resp_code = "401"
     assert str(response.status_code) == user_resp_code
 
 def test_GetV2CamLiveImageCode404_CamNotFound():
     time.sleep(1)
     data = "Unknown CAM id:0"
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/0/image", auth=auth, stream=True)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/0/image", auth=auth, stream=True)
     user_resp_code = "404"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -77,7 +77,7 @@ def test_GetV2CamLiveImageCode404_CamNotFound():
 def test_GetV2CamLiveScaleImageCode200():
     time.sleep(1)
     # data = "success"
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image?scale_y=500&scale_x=500", auth=auth, stream=True)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/image?scale_y=500&scale_x=500", auth=auth, stream=True)
     user_resp_code = "200"
     time.sleep(3)
     assert str(response.status_code) == user_resp_code
@@ -90,7 +90,7 @@ def test_GetV2CamLiveScaleImageCode200():
 def test_GetV2CamLiveScaleImageCode200WithOnlyX():
     time.sleep(2)
     # data = "success"
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image?scale_x=500", auth=auth, stream=True)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/image?scale_x=500", auth=auth, stream=True)
     user_resp_code = "200"
     time.sleep(2)
     assert str(response.status_code) == user_resp_code
@@ -103,7 +103,7 @@ def test_GetV2CamLiveScaleImageCode200WithOnlyX():
 def test_GetV2CamLiveScaleImageCode200WithOnlyY():
     time.sleep(2)
     # data = "success"
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image?scale_y=500", auth=auth, stream=True)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/image?scale_y=500", auth=auth, stream=True)
     user_resp_code = "200"
     time.sleep(2)
     assert str(response.status_code) == user_resp_code
@@ -116,14 +116,14 @@ def test_GetV2CamLiveScaleImageCode200WithOnlyY():
 def test_GetV2CamLiveScaleImageCode401():
     time.sleep(1)
     # data = "success"
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image?scale_y=500&scale_x=500", auth=("", ""), stream=True)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/image?scale_y=500&scale_x=500", auth=("", ""), stream=True)
     user_resp_code = "401"
     assert str(response.status_code) == user_resp_code
 
 def test_GetV2CamLiveScaleImageCode404():
     time.sleep(1)
     data = "Unknown CAM id:0"
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/0/image?scale_y=500", auth=auth, stream=True)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/0/image?scale_y=500", auth=auth, stream=True)
     user_resp_code = "404"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -142,7 +142,7 @@ def test_GetV2CamImageCode200(fix):
     time.sleep(3)
     fix.send_react(("CAM|"+camId+"|REC_STOP").encode("utf-8"))
     time.sleep(7)
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image/"+archtime, auth=auth, stream=True)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/image/"+archtime, auth=auth, stream=True)
     user_resp_code = "200"
     time.sleep(2)
     assert str(response.status_code) == user_resp_code
@@ -159,7 +159,7 @@ def test_GetV2CamImageCode200(fix):
 def test_GetV2CamImageCode400_IncorrectTime():
     time.sleep(1)
     data1 = "time (2015-11-19T18:480:32) is not in valid format or incorrect. Expected format: yyyy-MM-dd hh:mm:ss[.zzz]"
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image/2015-11-19T18:480:32", auth=auth, stream=True)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/image/2015-11-19T18:480:32", auth=auth, stream=True)
     user_resp_code = "400"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -171,7 +171,7 @@ def test_GetV2CamImageCode401():
     time.sleep(1)
     m = dt.datetime.now()
     archtime = m.strftime("%Y-%m-%d %H:%M:%S")
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image/"+archtime, auth=("", ""), stream=True)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/image/"+archtime, auth=("", ""), stream=True)
     user_resp_code = "401"
     assert str(response.status_code) == user_resp_code
 
@@ -180,7 +180,7 @@ def test_GetV2CamImageCode404_CamNotFound():
     data1 = "Unknown CAM id:0"
     m = dt.datetime.now()
     archtime = m.strftime("%Y-%m-%d %H:%M:%S")
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/0/image/" + archtime, auth=auth)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/0/image/" + archtime, auth=auth)
     user_resp_code = "404"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -197,7 +197,7 @@ def test_GetV2CamImageCode412(fix):
     m = dt.datetime.now()
     archtime = m.strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]  # [:-3] убирает 3 последних символа
     data = "Ошибка получения изображения: Камера "+camId+": архив для " + archtime + " не найден"
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image/" + archtime, auth=auth, stream=True)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/image/" + archtime, auth=auth, stream=True)
     user_resp_code = "412"
     # print(response)
     assert str(response.status_code) == user_resp_code
@@ -214,14 +214,14 @@ def test_GetV2CamImageCode503():
         m = dt.datetime.now()
         archtime = m.strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
         try:
-            response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image/" + archtime, auth=auth, timeout=0.01)
+            response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/image/" + archtime, auth=auth, timeout=0.01)
             response.raise_for_status()  # Raise error in case of failure Далее ловим ошибку, но продолжаем посылать запросы
         except requests.exceptions.RequestException:
             i += 1
     time.sleep(1)
     m = dt.datetime.now()
     archtime = m.strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/image/" + archtime, auth=auth)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/image/" + archtime, auth=auth)
     user_resp_code = "503"
     assert str(response.status_code) == user_resp_code
 

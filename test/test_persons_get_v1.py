@@ -5,7 +5,7 @@ from model.input_data import *
 # Запрос на получение настроек всех объектов PERSONS
 def test_GetV1PersonCode200():
     data = "success"
-    response = requests.get(url="http://"+slave_ip+":8888/api/v1/persons", auth=auth)
+    response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v1/persons", auth=auth)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -14,13 +14,13 @@ def test_GetV1PersonCode200():
     assert data == n
 
 def test_GetV1PersonCode401():
-    response = requests.get(url="http://"+slave_ip+":8888/api/v1/persons", auth=("", ""))
+    response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v1/persons", auth=("", ""))
     user_resp_code = "401"
     assert str(response.status_code) == user_resp_code
 
 # Запрос на получение настроек объекта PERSONS
 def test_GetV1PersonByIdCode200():
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v1/persons/"+personId+"", auth=auth)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v1/persons/"+personId+"", auth=auth)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -30,7 +30,7 @@ def test_GetV1PersonByIdCode200():
 
 def test_GetV1PersonByIdCode400():
     data = "Unknown PERSON id:0"
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v1/persons/0", auth=auth)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v1/persons/0", auth=auth)
     user_resp_code = "400"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -39,6 +39,6 @@ def test_GetV1PersonByIdCode400():
     assert data == n
 
 def test_GetV1PersonByIdCode401():
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v1/persons/0", auth=("", ""))
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v1/persons/0", auth=("", ""))
     user_resp_code = "401"
     assert str(response.status_code) == user_resp_code

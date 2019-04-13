@@ -33,7 +33,7 @@ def test_GetV2CameraProtocolCode200(fix):
     time.sleep(1)
     p = dt.datetime.now()
     endtime = (p.strftime("%Y%m%dT%H%M%S"))
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime + "&stop_time=" + endtime + "&max_count=3", auth=auth)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime + "&stop_time=" + endtime + "&max_count=3", auth=auth)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -54,7 +54,7 @@ def test_GetV2CameraProtocolCode200WithoutEndTime(fix):
     fix.send_react(("CAM|"+camId+"|ARM").encode("utf-8"))
     fix.send_react(("CAM|"+camId+"|DISARM").encode("utf-8"))
     time.sleep(1)
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime + "&max_count=1", auth=auth)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime + "&max_count=1", auth=auth)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -74,7 +74,7 @@ def test_GetV2CameraProtocolCode200WithoutEndTimeAndMaxCount(fix):
     fix.send_react(("CAM|"+camId+"|ARM").encode("utf-8"))
     fix.send_react(("CAM|"+camId+"|DISARM").encode("utf-8"))
     time.sleep(1)
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime, auth=auth)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime, auth=auth)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -85,7 +85,7 @@ def test_GetV2CameraProtocolCode200WithoutEndTimeAndMaxCount(fix):
 
 def test_GetV2CameraProtocolCode400():
     data = "Missed required parameter:start_time"
-    response = requests.get(url="http://"+slave_ip+":8888/api/v1/cameras/"+camId+"/protocol", auth=auth)
+    response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v1/cameras/"+camId+"/protocol", auth=auth)
     user_resp_code = "400"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -95,7 +95,7 @@ def test_GetV2CameraProtocolCode400():
 
 def test_GetV2CameraProtocolCode400IncorrectTime():
     data = "Incorrect parameter:start_time, value:20151119T1848032"
-    response = requests.get(url="http://"+slave_ip+":8888/api/v1/cameras/"+camId+"/protocol?start_time=20151119T1848032", auth=auth)
+    response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v1/cameras/"+camId+"/protocol?start_time=20151119T1848032", auth=auth)
     user_resp_code = "400"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -105,7 +105,7 @@ def test_GetV2CameraProtocolCode400IncorrectTime():
 
 def test_GetV2CameraProtocolCode401():
     data = {"name": camName}
-    response = requests.put(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"", headers=headers, data=json.dumps(dict(data)), auth=("", ""))
+    response = requests.put(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"", headers=headers, data=json.dumps(dict(data)), auth=("", ""))
     user_resp_code = "401"
     assert str(response.status_code) == user_resp_code
 
@@ -119,7 +119,7 @@ def test_GetV2CameraProtocolCode200EventFilterEmpty(fix):
     fix.send_react(("CAM|"+camId+"|ARM").encode("utf-8"))
     fix.send_react(("CAM|"+camId+"|DISARM").encode("utf-8"))
     time.sleep(1)
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime, auth=auth)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime, auth=auth)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -137,7 +137,7 @@ def test_GetV2CameraProtocolCode200EventFilterAllowAll(fix):
     fix.send_react(("CAM|"+camId+"|ARM").encode("utf-8"))
     fix.send_react(("CAM|"+camId+"|DISARM").encode("utf-8"))
     time.sleep(1)
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime, auth=auth)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime, auth=auth)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -161,14 +161,14 @@ def test_GetV2CameraProtocolCode200EventFilterAllowId(fix):
     time.sleep(1)
     fix.send_react(("CAM|"+camId2+"|DISARM").encode("utf-8"))
     time.sleep(1)
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime, auth=auth)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime, auth=auth)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
     data1 = json.loads(body)
     n = data1["data"]["actual_count"]
     assert data == n
-    response1 = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId2+"/protocol?start_time=" + starttime, auth=auth)
+    response1 = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId2+"/protocol?start_time=" + starttime, auth=auth)
     user_resp_code = "200"
     assert str(response1.status_code) == user_resp_code
     body1 = json.dumps(response1.json())
@@ -188,7 +188,7 @@ def test_GetV2CameraProtocolCode200EventFilterAllowEvent(fix):
     fix.send_react(("CAM|"+camId2+"|ARM").encode("utf-8"))
     fix.send_react(("CAM|"+camId2+"|DISARM").encode("utf-8"))
     time.sleep(1)
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime, auth=auth)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime, auth=auth)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -196,7 +196,7 @@ def test_GetV2CameraProtocolCode200EventFilterAllowEvent(fix):
     n = data1["data"]["actual_count"]
     assert data == n
 
-    response1 = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId2+"/protocol?start_time=" + starttime, auth=auth)
+    response1 = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId2+"/protocol?start_time=" + starttime, auth=auth)
     user_resp_code = "200"
     assert str(response1.status_code) == user_resp_code
     body1 = json.dumps(response1.json())
@@ -215,7 +215,7 @@ def test_GetV2CameraProtocolCode200EventFilterAllowIdForbidAll(fix):
     fix.send_react(("CAM|"+camId2+"|ARM").encode("utf-8"))
     fix.send_react(("CAM|"+camId2+"|DISARM").encode("utf-8"))
     time.sleep(1)
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime, auth=auth)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime, auth=auth)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -223,7 +223,7 @@ def test_GetV2CameraProtocolCode200EventFilterAllowIdForbidAll(fix):
     n = data1["data"]["actual_count"]
     assert data == n
 
-    response1 = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId2+"/protocol?start_time=" + starttime, auth=auth)
+    response1 = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId2+"/protocol?start_time=" + starttime, auth=auth)
     user_resp_code = "200"
     assert str(response1.status_code) == user_resp_code
     body1 = json.dumps(response1.json())
@@ -242,7 +242,7 @@ def test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId(fix):
     fix.send_react(("CAM|"+camId2+"|ARM").encode("utf-8"))
     fix.send_react(("CAM|"+camId2+"|DISARM").encode("utf-8"))
     time.sleep(1)
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime, auth=auth)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime, auth=auth)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -250,7 +250,7 @@ def test_GetV2CameraProtocolCode200EventFilterAllowAllForbidId(fix):
     n = data1["data"]["actual_count"]
     assert data == n
 
-    response1 = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId2+"/protocol?start_time=" + starttime, auth=auth)
+    response1 = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId2+"/protocol?start_time=" + starttime, auth=auth)
     user_resp_code = "200"
     assert str(response1.status_code) == user_resp_code
     body1 = json.dumps(response1.json())
@@ -269,7 +269,7 @@ def test_GetV2CameraProtocolCode200EventFilterAllowEventForbidAll(fix):
     fix.send_react(("CAM|"+camId2+"|ARM").encode("utf-8"))
     fix.send_react(("CAM|"+camId2+"|DISARM").encode("utf-8"))
     time.sleep(1)
-    response = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime, auth=auth)
+    response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime, auth=auth)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -277,7 +277,7 @@ def test_GetV2CameraProtocolCode200EventFilterAllowEventForbidAll(fix):
     n = data1["data"]["actual_count"]
     assert data == n
 
-    response1 = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId2+"/protocol?start_time=" + starttime, auth=auth)
+    response1 = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId2+"/protocol?start_time=" + starttime, auth=auth)
     user_resp_code = "200"
     assert str(response1.status_code) == user_resp_code
     body1 = json.dumps(response1.json())
@@ -297,7 +297,7 @@ def test_GetV2CameraProtocolCode200EventFilterAllowAllForbidEvent(fix):
     fix.send_react(("CAM|"+camId+"|DISARM").encode("utf-8"))
     fix.send_react(("CAM|"+camId2+"|DISARM").encode("utf-8"))
     time.sleep(1)
-    response = requests.get(url="http://"+slave_ip+":8888/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime, auth=auth)
+    response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime, auth=auth)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -307,7 +307,7 @@ def test_GetV2CameraProtocolCode200EventFilterAllowAllForbidEvent(fix):
     assert data == n
 
     time.sleep(1)
-    response1 = requests.get(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId2+"/protocol?start_time=" + starttime, auth=auth)
+    response1 = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId2+"/protocol?start_time=" + starttime, auth=auth)
     user_resp_code = "200"
     assert str(response1.status_code) == user_resp_code
     body1 = json.dumps(response1.json())

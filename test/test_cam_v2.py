@@ -6,7 +6,7 @@ from model.input_data import *
 # Запрос на получение настроек всех объектов CAM
 def test_GetV2AllCamerasCode200():
     data = "success"
-    response = requests.get(url="http://"+slave_ip+":8888/api/v2/cameras/", auth=auth)
+    response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v2/cameras/", auth=auth)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -15,14 +15,14 @@ def test_GetV2AllCamerasCode200():
     assert data == n
 
 def test_GetV2AllCamerasStatus401():
-    response = requests.get(url="http://"+slave_ip+":8888/api/v2/cameras/", auth=("", ""))
+    response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v2/cameras/", auth=("", ""))
     user_resp_code = "401"
     assert str(response.status_code) == user_resp_code
 
 
 # Запрос на получение настроек объекта CAM
 def test_GetV2CamerasByIdCode200():
-    response = requests.get(url="http://"+slave_ip+":8888/api/v2/cameras/"+camId, auth=auth)
+    response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v2/cameras/"+camId, auth=auth)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -31,14 +31,14 @@ def test_GetV2CamerasByIdCode200():
     assert camId == n
 
 def test_GetV2CamerasByIdCode401():
-    response = requests.get(url="http://"+slave_ip+":8888/api/v2/cameras/"+camId, auth=("", ""))
+    response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v2/cameras/"+camId, auth=("", ""))
     user_resp_code = "401"
     assert str(response.status_code) == user_resp_code
 
 
 def test_GetV2CamerasByIdCode404():
     data = "Unknown CAM id:0"
-    response = requests.get(url="http://"+slave_ip+":8888/api/v2/cameras/0", auth=auth)
+    response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v2/cameras/0", auth=auth)
     user_resp_code = "404"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -48,7 +48,7 @@ def test_GetV2CamerasByIdCode404():
 
 #Запрос на получение поля status объекта CAM
 def test_GetV2CameraStatusCode200():
-    response = requests.get(url="http://"+slave_ip+":8888/api/v2/cameras/"+camId+"/status", auth=auth)
+    response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v2/cameras/"+camId+"/status", auth=auth)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -57,14 +57,14 @@ def test_GetV2CameraStatusCode200():
     assert camId == n
 
 def test_GetV2CameraStatusCode401():
-    response = requests.get(url="http://"+slave_ip+":8888/api/v2/cameras/"+camId+"/status", auth=("", ""))
+    response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v2/cameras/"+camId+"/status", auth=("", ""))
     user_resp_code = "401"
     assert str(response.status_code) == user_resp_code
 
 
 def test_GetV2CameraStatusCode404():
     data = "Unknown CAM id:0"
-    response = requests.get(url="http://"+slave_ip+":8888/api/v2/cameras/0/status", auth=auth)
+    response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v2/cameras/0/status", auth=auth)
     user_resp_code = "404"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -75,7 +75,7 @@ def test_GetV2CameraStatusCode404():
 
 # Запрос на получение поля rtsp объекта CAM
 def test_GetV2CameraRtspCode200():
-    response = requests.get(url="http://"+slave_ip+":8888/api/v2/cameras/"+camId+"/rtsp", auth=auth)
+    response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v2/cameras/"+camId+"/rtsp", auth=auth)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -84,14 +84,14 @@ def test_GetV2CameraRtspCode200():
     assert camId == n
 
 def test_GetV2CameraRtspCode401():
-    response = requests.get(url="http://"+slave_ip+":8888/api/v2/cameras/"+camId+"/rtsp", auth=("", ""))
+    response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v2/cameras/"+camId+"/rtsp", auth=("", ""))
     user_resp_code = "401"
     assert str(response.status_code) == user_resp_code
 
 
 def test_GetV2CameraRtspCode404():
     data = "Unknown CAM id:0"
-    response = requests.get(url="http://"+slave_ip+":8888/api/v2/cameras/0/rtsp", auth=auth)
+    response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v2/cameras/0/rtsp", auth=auth)
     user_resp_code = "404"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -101,7 +101,7 @@ def test_GetV2CameraRtspCode404():
 
 # Запрос на получение поля rtsp/live объекта CAM
 def test_GetV2CameraRtspLiveCode200():
-    response = requests.get(url="http://"+slave_ip+":8888/api/v2/cameras/"+camId+"/rtsp/live", auth=auth)
+    response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v2/cameras/"+camId+"/rtsp/live", auth=auth)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -110,14 +110,14 @@ def test_GetV2CameraRtspLiveCode200():
     assert camId == n
 
 def test_GetV2CameraRtspLiveCode401():
-    response = requests.get(url="http://"+slave_ip+":8888/api/v2/cameras/"+camId+"/rtsp/live", auth=("", ""))
+    response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v2/cameras/"+camId+"/rtsp/live", auth=("", ""))
     user_resp_code = "401"
     assert str(response.status_code) == user_resp_code
 
 
 def test_GetV2CameraRtspLiveCode404():
     data = "Unknown CAM id:0"
-    response = requests.get(url="http://"+slave_ip+":8888/api/v2/cameras/0/rtsp/live", auth=auth)
+    response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v2/cameras/0/rtsp/live", auth=auth)
     user_resp_code = "404"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -127,7 +127,7 @@ def test_GetV2CameraRtspLiveCode404():
 
 # Запрос на получение поля rtsp/archive объекта CAM
 def test_GetV2CameraRtspArchiveCode200():
-    response = requests.get(url="http://"+slave_ip+":8888/api/v2/cameras/"+camId+"/rtsp/archive", auth=auth)
+    response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v2/cameras/"+camId+"/rtsp/archive", auth=auth)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -136,14 +136,14 @@ def test_GetV2CameraRtspArchiveCode200():
     assert camId == n
 
 def test_GetV2CameraRtspArchiveCode401():
-    response = requests.get(url="http://"+slave_ip+":8888/api/v2/cameras/"+camId+"/rtsp/archive", auth=("", ""))
+    response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v2/cameras/"+camId+"/rtsp/archive", auth=("", ""))
     user_resp_code = "401"
     assert str(response.status_code) == user_resp_code
 
 
 def test_GetV2CameraRtspArchiveCode404():
     data = "Unknown CAM id:0"
-    response = requests.get(url="http://"+slave_ip+":8888/api/v2/cameras/0/rtsp/archive", auth=auth)
+    response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v2/cameras/0/rtsp/archive", auth=auth)
     user_resp_code = "404"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())

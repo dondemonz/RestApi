@@ -7,7 +7,7 @@ import time
 
 def test_PutV2CamerasCode200():
     data = {"name": camId}
-    response = requests.put(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"", headers=headers, data=json.dumps(dict(data)), auth=auth)
+    response = requests.put(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"", headers=headers, data=json.dumps(dict(data)), auth=auth)
     # if_there_is_no_json(response)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
@@ -18,14 +18,14 @@ def test_PutV2CamerasCode200():
 
 def test_PutV2CamerasCode401():
     data = {"name": camId}
-    response = requests.put(url="http://" + slave_ip + ":8888/api/v2/cameras/"+camId+"", headers=headers, data=json.dumps(dict(data)), auth=("", ""))
+    response = requests.put(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"", headers=headers, data=json.dumps(dict(data)), auth=("", ""))
     user_resp_code = "401"
     assert str(response.status_code) == user_resp_code
 
 def test_PutV2CamerasCode404():
     data1 = "Camera 0 not found."
     data = {"name": camId}
-    response = requests.put(url="http://" + slave_ip + ":8888/api/v2/cameras/0", headers=headers, data=json.dumps(dict(data)), auth=auth)
+    response = requests.put(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/0", headers=headers, data=json.dumps(dict(data)), auth=auth)
     user_resp_code = "404"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())

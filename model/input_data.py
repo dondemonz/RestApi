@@ -5,6 +5,7 @@ user = "1"
 password = "1"
 auth = (user, password)  # пользователь/пароль
 slave_ip = "172.16.11.102"
+restPort = "8887"
 camId = "202"
 camName = "cam 202"
 camId2 = "45"

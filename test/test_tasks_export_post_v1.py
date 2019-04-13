@@ -18,7 +18,7 @@ def test_GetV1TaskByIdCode200and401andPostV1Code201(fix):
     # p = p.time()
     # print(p)
     data = {"camera": ""+camId+"", "from": starttime, "to": endtime}
-    response = requests.post(url="http://" + slave_ip + ":8888/api/v1/export/tasks/", headers=headers, data=json.dumps(dict(data)), auth=auth)
+    response = requests.post(url="http://" + slave_ip + ":"+restPort+"/api/v1/export/tasks/", headers=headers, data=json.dumps(dict(data)), auth=auth)
     user_resp_code = "201"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -27,14 +27,14 @@ def test_GetV1TaskByIdCode200and401andPostV1Code201(fix):
     # print(task_id)
 
     data2 = "success"
-    response1 = requests.get(url="http://" + slave_ip + ":8888/api/v1/export/tasks/"+task_id, auth=auth)
+    response1 = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v1/export/tasks/"+task_id, auth=auth)
     user_resp_code = "200"
     assert str(response1.status_code) == user_resp_code
     body1 = json.dumps(response1.json())
     dataresp = json.loads(body1)
     assert data2 == dataresp["status"]
 
-    response2 = requests.get(url="http://" + slave_ip + ":8888/api/v1/export/tasks/1" + task_id, auth=("", ""))
+    response2 = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v1/export/tasks/1" + task_id, auth=("", ""))
     user_resp_code = "401"
     assert str(response2.status_code) == user_resp_code
 
@@ -50,7 +50,7 @@ def test_PostV1TaskCode400(fix):
     p = dt.datetime.now()
     endtime = p.strftime("%Y-%m-%d %H:%M:%S")
     data = {"camera": ""+camId+"", "from": starttime, "to": endtime}
-    response = requests.post(url="http://" + slave_ip + ":8888/api/v1/export/tasks/", headers=headers, data=json.dumps(dict(data)), auth=auth)
+    response = requests.post(url="http://" + slave_ip + ":"+restPort+"/api/v1/export/tasks/", headers=headers, data=json.dumps(dict(data)), auth=auth)
     user_resp_code = "400"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -68,7 +68,7 @@ def test_PostV1TaskCode404():
     p = dt.datetime.now()
     endtime = p.strftime("%Y-%m-%d %H:%M:%S")
     data = {"camera": "0", "from": starttime, "to": endtime}
-    response = requests.post(url="http://" + slave_ip + ":8888/api/v1/export/tasks/", headers=headers, data=json.dumps(dict(data)), auth=auth)
+    response = requests.post(url="http://" + slave_ip + ":"+restPort+"/api/v1/export/tasks/", headers=headers, data=json.dumps(dict(data)), auth=auth)
     user_resp_code = "404"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
@@ -87,7 +87,7 @@ def test_PostV1TaskCode401(fix):
     p = dt.datetime.now()
     endtime = p.strftime("%Y-%m-%d %H:%M:%S")
     data = {"camera": ""+camId+"", "from": starttime, "to": endtime}
-    response = requests.post(url="http://" + slave_ip + ":8888/api/v1/export/tasks/", headers=headers, data=json.dumps(dict(data)), auth=("", ""))
+    response = requests.post(url="http://" + slave_ip + ":"+restPort+"/api/v1/export/tasks/", headers=headers, data=json.dumps(dict(data)), auth=("", ""))
     user_resp_code = "401"
     assert str(response.status_code) == user_resp_code
 
