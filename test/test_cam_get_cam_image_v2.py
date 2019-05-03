@@ -132,6 +132,7 @@ def test_GetV2CamLiveScaleImageCode404():
     assert data == n
 
 # Запросы на получение кадра с камеры 123
+
 def test_GetV2CamImageCode200(fix):
     time.sleep(1)
     fix.send_react(("CAM|"+camId+"|REC").encode("utf-8"))
