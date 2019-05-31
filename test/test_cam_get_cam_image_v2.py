@@ -75,11 +75,10 @@ def test_GetV2CamLiveImageCode404_CamNotFound():
 
 # Запрос на получение масштабированного кадра живого видео с камеры
 def test_GetV2CamLiveScaleImageCode200():
-    time.sleep(1)
+    time.sleep(2)
     # data = "success"
     response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/image?scale_y=500&scale_x=500", auth=auth, stream=True)
     user_resp_code = "200"
-    time.sleep(3)
     assert str(response.status_code) == user_resp_code
     # сохранить картинку в файл
     with open(exportPath+'img1.png', 'wb') as out_file:
@@ -92,10 +91,8 @@ def test_GetV2CamLiveScaleImageCode200WithOnlyX():
     # data = "success"
     response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/image?scale_x=500", auth=auth, stream=True)
     user_resp_code = "200"
-    time.sleep(2)
     assert str(response.status_code) == user_resp_code
     # сохранить картинку в файл
-    time.sleep(2)
     with open(exportPath+'img2.png', 'wb') as out_file:
         shutil.copyfileobj(response.raw, out_file)
     del response
