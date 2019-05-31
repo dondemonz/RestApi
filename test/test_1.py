@@ -30,14 +30,17 @@ def test_create_environment(fix):
     fix.send_event(message=("CORE||CREATE_OBJECT|objtype<GRABBER>,objid<" + camId2 + ">,parent_id<" + slave + ">,name<"+camName2+">,type<Axis>,model<default>,format<H264>,ip<172.16.16.10>,user_name<root>,auth_crpt<OLFNDJGNJHDLNPLJ>").encode("utf-8"))  # type=Axis, т.к. без типа будет сильно грузиться система
     fix.send_event(message=("CORE||CREATE_OBJECT|objtype<CAM>,objid<" + camId2 + ">,parent_id<" + camId2 + ">,name<"+camName2+">").encode("utf-8"))
     #создание папки для экспорта тестов cam_get_cam_image
-    if not os.path.exists("C:\\export\\"):
-        os.mkdir("C:\\export\\")
-        print("Directory ", "C:\\export\\", " Created ")
+    if not os.path.exists("D:\\export\\"):
+        os.mkdir("D:\\export\\")
+        print("Directory ", "D:\\export\\", " Created ")
     else:
-        print("Directory ", "C:\\export\\", " already exists")
+        print("Directory ", "D:\\export\\", " already exists")
     time.sleep(5)
     # как проверить есть ли в системе рест и включить ему фильтр или удалить и создать свой рест?
     # fix.send_event(message=("CORE||DELETE_OBJECT|objtype<REST_API>,objid<*>").encode("utf-8"))
+
+
+
 
 
 """
@@ -45,9 +48,10 @@ def test_test(fix):
     fix.connect_to_dll()
     i = 0
     while i < 100:
-        fix.send_event(("CAM|202|ARCH_GET_RECORDS").encode("utf-8")) yu
+        fix.send_event(("CAM|202|ARCH_GET_RECORDS").encode("utf-8"))
     i += 1
 """
+
 
 
     # fix.send_event(message=("CORE||CREATE_OBJECT|objtype<ACTIVEX>,objid<" + objId + ">,parent_id<" + slave + ">,name<Test_IIDK_Interface>").encode("utf-8"))
