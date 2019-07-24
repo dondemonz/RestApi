@@ -206,26 +206,25 @@ def test_PostV1PersonsCode400v4():
 
 
 
-#def test_DeleteV1PersonsCode200():
-#    response = requests.delete(url="http://" + slave_ip + ":" + restPort + "/api/v1/persons/3", headers=headers,  auth=auth)
- #   data = "success"
-  #  user_resp_code = "200"
-   # assert str(response.status_code) == user_resp_code
-    #body = json.dumps(response.json())
-    #data1 = json.loads(body)
-    #n = data1["status"]
-    #assert n == data
+def test_DeleteV1PersonsCode200():
+    response = requests.delete(url="http://" + slave_ip + ":" + restPort + "/api/v1/persons/1000", headers=headers,  auth=auth)
+    data = "success"
+    user_resp_code = "200"
+    assert str(response.status_code) == user_resp_code
+    body = json.dumps(response.json())
+    data1 = json.loads(body)
+    n = data1["status"]
+    assert n == data
 
-#def test_DeleteV1PersonsCode403():
- #   response = requests.delete(url="http://" + slave_ip + ":"+restPort+"/api/v1/persons/2.2", headers=headers, auth=("2", "3"))
-  #  user_resp_code = "403"
-   # assert str(response.status_code) == user_resp_code
+def test_DeleteV1PersonsCode403():
+    response = requests.delete(url="http://" + slave_ip + ":"+restPort+"/api/v1/persons/2.2", headers=headers, auth=("2", "3"))
+    user_resp_code = "403"
+    assert str(response.status_code) == user_resp_code
 
-#def test_DeleteEnvironment(fix):
- #   fix.send_event(message="CORE||DELETE_OBJECT|objtype<DEPARTMENT>,objid<8>".encode("utf-8"))
+def test_DeleteEnvironment(fix):
+    fix.send_event(message="CORE||DELETE_OBJECT|objtype<DEPARTMENT>,objid<8>".encode("utf-8"))
 
 
 
-#с.	у пользователя пославшего команду нет прав на модификацию объекта прав "user_rights_id" (значение до и после изменения) (403 Forbidden)
 
 
