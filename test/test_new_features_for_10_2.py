@@ -136,8 +136,8 @@ def test_PutV1PersonsCode403v2(fix):
     assert str(response.status_code) == user_resp_code
 
 
-def test_PostV1PersonsCode200():
-    data = {"department_id": "1.1", "name": "5", "user_rights_id" : "1.1"}
+def test_PostV1PersonsCode201():
+    data = {"department_id": "1.1", "name": "5", "user_rights_id": "1.1"}
     response = requests.post(url="http://" + slave_ip + ":"+restPort+"/api/v1/persons", headers=headers, data=json.dumps(dict(data)), auth=auth)
     user_resp_code = "201"
     assert str(response.status_code) == user_resp_code
@@ -204,23 +204,25 @@ def test_PostV1PersonsCode400v4():
     n = data1["message"]
     assert data2 == n
 
-def test_DeleteV1PersonsCode200():
-    response = requests.delete(url="http://" + slave_ip + ":" + restPort + "/api/v1/persons/3", headers=headers,  auth=auth)
-    data = "success"
-    user_resp_code = "200"
-    assert str(response.status_code) == user_resp_code
-    body = json.dumps(response.json())
-    data1 = json.loads(body)
-    n = data1["status"]
-    assert n == data
 
-def test_DeleteV1PersonsCode403():
-    response = requests.delete(url="http://" + slave_ip + ":"+restPort+"/api/v1/persons/2.2", headers=headers, auth=("2", "3"))
-    user_resp_code = "403"
-    assert str(response.status_code) == user_resp_code
 
-def test_DeleteEnvironment(fix):
-    fix.send_event(message="CORE||DELETE_OBJECT|objtype<DEPARTMENT>,objid<8>".encode("utf-8"))
+#def test_DeleteV1PersonsCode200():
+#    response = requests.delete(url="http://" + slave_ip + ":" + restPort + "/api/v1/persons/3", headers=headers,  auth=auth)
+ #   data = "success"
+  #  user_resp_code = "200"
+   # assert str(response.status_code) == user_resp_code
+    #body = json.dumps(response.json())
+    #data1 = json.loads(body)
+    #n = data1["status"]
+    #assert n == data
+
+#def test_DeleteV1PersonsCode403():
+ #   response = requests.delete(url="http://" + slave_ip + ":"+restPort+"/api/v1/persons/2.2", headers=headers, auth=("2", "3"))
+  #  user_resp_code = "403"
+   # assert str(response.status_code) == user_resp_code
+
+#def test_DeleteEnvironment(fix):
+ #   fix.send_event(message="CORE||DELETE_OBJECT|objtype<DEPARTMENT>,objid<8>".encode("utf-8"))
 
 
 
