@@ -13,7 +13,7 @@ def test_create_key_and_pareams():   # создает параемтры в ре
     winreg.SetValueEx(key, 'downloadTimeout', 0, winreg.REG_SZ, '2')
 
 # срубает image_export.exe для того, чтобы применились параметры реестра. !!!работает только если pycharm запущен от администратора!!!
-def test_reload_video_exe(fix):
+def test_reload_image_export(fix):
     PROCNAME = "image_export.exe"
     for proc in psutil.process_iter():
         # check whether the process name matches

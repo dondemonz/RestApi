@@ -38,6 +38,8 @@ def test_GetV1PersonByIdCode400():
     n = data1["message"]
     assert data == n
 
+
+
 def test_GetV1PersonByIdCode401():
     response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v1/persons/0", auth=("", ""))
     user_resp_code = "401"
