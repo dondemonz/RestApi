@@ -205,7 +205,7 @@ def test_GetV2CamImageCode412(fix):
 
 
 def test_GetV2CamImageCode503():
-    time.sleep(1)
+    time.sleep(2)
     i = 0
     while i < 50:
         m = dt.datetime.now()
