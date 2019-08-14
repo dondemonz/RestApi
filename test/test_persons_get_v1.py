@@ -28,10 +28,10 @@ def test_GetV1PersonByIdCode200():
     n = data1["data"]["id"]
     assert personId == n
 
-def test_GetV1PersonByIdCode400():
+def test_GetV1PersonByIdCode404():
     data = "Unknown PERSON id:0"
     response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v1/persons/0", auth=auth)
-    user_resp_code = "400"
+    user_resp_code = "404"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
     data1 = json.loads(body)

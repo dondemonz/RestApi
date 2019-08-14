@@ -195,7 +195,7 @@ def test_PostV1PersonsCode403v2():
 
 def test_PostV1PersonsCode400v4():
     data = {"name": "", "user_rights_id": "1.1"}
-    data2 = "name/department_id is not specified"
+    data2 = "name is not specified"
     response = requests.post(url="http://" + slave_ip + ":"+restPort+"/api/v1/persons", headers=headers, data=json.dumps(dict(data)), auth=auth)
     user_resp_code = "400"
     assert str(response.status_code) == user_resp_code
