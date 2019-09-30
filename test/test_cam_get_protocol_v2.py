@@ -3,25 +3,6 @@ from model.json_check import *
 from model.input_data import *
 import time
 import datetime as dt
-import winreg
-import psutil
-
-
-def test_create_key_and_params():   # создает параемтры в реестре
-    key = winreg.CreateKey(winreg.HKEY_LOCAL_MACHINE, "SOFTWARE\\WOW6432Node\\ISS\\SecurOS\\Niss400\\ImageProcessor")
-    winreg.SetValueEx(key, 'deltaArchive', 0, winreg.REG_SZ, '1')
-    winreg.SetValueEx(key, 'downloadTimeout', 0, winreg.REG_SZ, '2')
-
-# срубает image_export.exe для того, чтобы применились параметры реестра. !!!работает только если pycharm запущен от администратора!!!
-def test_reload_image_export(fix):
-    PROCNAME = "image_export.exe"
-    for proc in psutil.process_iter():
-        # check whether the process name matches
-        if proc.name() == PROCNAME:
-            proc.kill()
-    time.sleep(5)
-    # фильтр создается и добавляется в рест в тесте создания объектов, дублируется тут для того, чтобы можно было запускать по кругу тесты без создания объектов. В конце тестов есть сброс фильтра в ресте.
-    fix.send_event(message=("CORE||UPDATE_OBJECT|objtype<REST_API>,objid<" + objId + ">,parent_id<" + slave + ">,event_filter_id<" + objId + ">").encode("utf-8"))
 
 
 def test_GetV2CameraProtocolCode200(fix):
