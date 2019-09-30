@@ -7,7 +7,7 @@ import winreg
 import psutil
 
 
-def test_create_key_and_pareams():   # создает параемтры в реестре
+def test_create_key_and_params():   # создает параемтры в реестре
     key = winreg.CreateKey(winreg.HKEY_LOCAL_MACHINE, "SOFTWARE\\WOW6432Node\\ISS\\SecurOS\\Niss400\\ImageProcessor")
     winreg.SetValueEx(key, 'deltaArchive', 0, winreg.REG_SZ, '1')
     winreg.SetValueEx(key, 'downloadTimeout', 0, winreg.REG_SZ, '2')
