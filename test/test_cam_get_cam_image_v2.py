@@ -5,33 +5,9 @@ from model.input_data import *
 import shutil
 import time
 import datetime as dt
-import winreg
-import psutil
-
-# import grequests
-# from threading import Thread
-# from requests import get, post, put, patch, delete, options, head
-
 
 # Запросы на получения кадра живого видео с камеры
 
-
-# Настройки в реестре для тестов GetV2CamImageCode412 и GetV2CamImageCode503:
-# deltaArchive [REG_SZ] = 1 время ближайшего кадра в реестре
-# downloadTImeout [REG_SZ] = 60 время ожидания запроса
-def test_create_key_and_pareams():   # создает параемтры в реестре, downloadTImeout 2 т.к. с 60 не проходит тест
-    key = winreg.CreateKey(winreg.HKEY_LOCAL_MACHINE, "SOFTWARE\\WOW6432Node\\ISS\\SecurOS\\Niss400\\ImageProcessor")
-    winreg.SetValueEx(key, 'deltaArchive', 0, winreg.REG_SZ, '1')
-    winreg.SetValueEx(key, 'downloadTimeout', 0, winreg.REG_SZ, '2')
-
-# срубает video.exe для того, чтобы применились параметры реестра. !!!работает только если pycharm запущен от администратора!!!
-def test_reload_video_exe():
-    PROCNAME = "video.exe"
-    for proc in psutil.process_iter():
-        # check whether the process name matches
-        if proc.name() == PROCNAME:
-            proc.kill()
-    time.sleep(5)
 
 def test_GetV2CamLiveImageCode200():
     time.sleep(1)
