@@ -52,6 +52,7 @@ def test_PostV1TaskCode400(fix):
     data = {"camera": ""+camId+"", "from": starttime, "to": endtime}
     response = requests.post(url="http://" + slave_ip + ":"+restPort+"/api/v1/export/tasks/", headers=headers, data=json.dumps(dict(data)), auth=auth)
     user_resp_code = "400"
+    time.sleep(2)
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
     data2 = json.loads(body)
