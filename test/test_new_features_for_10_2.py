@@ -56,7 +56,7 @@ def test_ApiV1UserRightsCode200(fix):
     n = data1["status"]
     assert data == n
     id = data1["data"][1]["name"]
-    assert id == "Права опытных пользователей"
+    assert id == "Права простых пользователей"
 
 def test_ApiV1UserRightsIdCode200(fix):
     data = "success"
