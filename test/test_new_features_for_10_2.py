@@ -47,6 +47,7 @@ def test_ApiV1DepartmentsIdCode404(fix):
     assert data == n
 
 def test_ApiV1UserRightsCode200(fix):
+    #Почему-то "Права простых" иногда меняется на "Права опотных". Разобраться пока не смог.
     data = "success"
     response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v1/user_rights", auth=auth)
     user_resp_code = "200"
