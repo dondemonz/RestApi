@@ -85,6 +85,7 @@ def fix3(request):
         fix.send_event(message=("CORE||DELETE_OBJECT|objtype<GRABBER>,objid<" + camId2 + ">").encode("utf-8"))
         shutil.rmtree("C:\\export")
         print('\nSome resource fin')
+        fix.disconnect()
     request.addfinalizer(fin)
     return request
 
