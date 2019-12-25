@@ -14,7 +14,7 @@ def test_GetV2AllCamerasCode200():
     n = data1["status"]
     assert data == n
 
-def test_GetV2AllCamerasStatus401():
+def test_GetV2AllCamerasStatusCode401():
     response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v2/cameras/", auth=("", ""))
     user_resp_code = "401"
     assert str(response.status_code) == user_resp_code
