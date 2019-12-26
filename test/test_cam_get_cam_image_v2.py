@@ -10,7 +10,7 @@ import datetime as dt
 
 
 def test_GetV2CamLiveImageCode200():
-    time.sleep(1)
+    time.sleep(2)
     # data = "success"
     response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v2/cameras/"+camId+"/image", auth=auth, stream=True)
     user_resp_code = "200"
