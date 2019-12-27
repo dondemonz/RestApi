@@ -51,10 +51,11 @@ def test_GetV2CamLiveImageCode404_CamNotFound():
 
 # Запрос на получение масштабированного кадра живого видео с камеры
 def test_GetV2CamLiveScaleImageCode200():
-    time.sleep(4)
+    time.sleep(5)
     # data = "success"
     response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/image?scale_y=500&scale_x=500", auth=auth, stream=True)
     user_resp_code = "200"
+    time.sleep(2)
     assert str(response.status_code) == user_resp_code
     # сохранить картинку в файл
     with open(exportPath+'img1.png', 'wb') as out_file:
@@ -181,7 +182,7 @@ def test_GetV2CamImageCode412(fix):
 
 
 def test_GetV2CamImageCode503():
-    time.sleep(5)
+    time.sleep(6)
     i = 0
     while i < 50:
         m = dt.datetime.now()
@@ -191,12 +192,12 @@ def test_GetV2CamImageCode503():
             response.raise_for_status()  # Raise error in case of failure Далее ловим ошибку, но продолжаем посылать запросы
         except requests.exceptions.RequestException:
             i += 1
-    time.sleep(1)
+    time.sleep(2)
     m = dt.datetime.now()
     archtime = m.strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
     response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/image/" + archtime, auth=auth)
     user_resp_code = "503"
-    time.sleep(3)
+    time.sleep(4)
     assert str(response.status_code) == user_resp_code
 
 
