@@ -23,7 +23,7 @@ def fix(request):
 def fix2(request):
     key = winreg.CreateKey(winreg.HKEY_LOCAL_MACHINE, "SOFTWARE\\WOW6432Node\\ISS\\SecurOS\\Niss400\\ImageProcessor")
     winreg.SetValueEx(key, 'deltaArchive', 0, winreg.REG_SZ, '1')
-    winreg.SetValueEx(key, 'downloadTimeout', 0, winreg.REG_SZ, '2')
+    winreg.SetValueEx(key, 'downloadTimeout', 0, winreg.REG_SZ, '3')
 
     # срубает video.exe для того, чтобы применились параметры реестра. !!!работает только если pycharm запущен от администратора!!!
     PROCNAME = "video.exe"

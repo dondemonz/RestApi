@@ -14,6 +14,7 @@ def test_GetV2CamLiveImageCode200():
     # data = "success"
     response = requests.get(url="http://"+slave_ip+":"+restPort+"/api/v2/cameras/"+camId+"/image", auth=auth, stream=True)
     user_resp_code = "200"
+    time.sleep(3)
     assert str(response.status_code) == user_resp_code
 
     # контент картинки, почему то есть проблемы с сохранением файла при этом выводе

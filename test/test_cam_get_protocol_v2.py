@@ -16,6 +16,7 @@ def test_GetV2CameraProtocolCode200(fix):
     endtime = (p.strftime("%Y%m%dT%H%M%S"))
     response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/protocol?start_time=" + starttime + "&stop_time=" + endtime + "&max_count=3", auth=auth)
     user_resp_code = "200"
+    time.sleep(3)
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())
     data1 = json.loads(body)
