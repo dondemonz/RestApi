@@ -1,5 +1,5 @@
 #устанавливаются в shiningpanda, так же копируется виртуальное окружение гдк много других плагинов
-pytest==3.10.1
+pytest
 httplib2
 more-itertools
 oauth2
