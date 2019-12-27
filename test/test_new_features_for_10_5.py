@@ -5,9 +5,9 @@ import time
 
 def test_GetV2AbsoluteCoordinatesCode200():
     data = "success"
-    time.sleep(3)
+    time.sleep(4)
     response = requests.get(url="http://" + slave_ip + ":" + restPort + "/api/v2/cameras/"+camId+"/ptz/status", auth=auth)
-    time.sleep(1)
+    time.sleep(3)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
     body = json.dumps(response.json())

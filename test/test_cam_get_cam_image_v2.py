@@ -51,7 +51,7 @@ def test_GetV2CamLiveImageCode404_CamNotFound():
 
 # Запрос на получение масштабированного кадра живого видео с камеры
 def test_GetV2CamLiveScaleImageCode200():
-    time.sleep(2)
+    time.sleep(4)
     # data = "success"
     response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/image?scale_y=500&scale_x=500", auth=auth, stream=True)
     user_resp_code = "200"
