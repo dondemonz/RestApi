@@ -4,10 +4,11 @@ from model.input_data import *
 import time
 
 def test_GetV2AbsoluteCoordinatesCode200():
-    # Внимание, тут слипы влияют на ошибки, если сделать меньше, то будет 412, или 408, возможно, это както связано с реестровым параметром downloadTimeout, который важен для других кейсов
+    # Внимание, тут слипы влияют на ошибку, если сделать меньше, то будет 408.
     data = "success"
     time.sleep(8)
     response = requests.get(url="http://" + slave_ip + ":" + restPort + "/api/v2/cameras/"+camId+"/ptz/status", auth=auth)
+    # Внимание, тут слип влияет на ошибку, если сделать меньше, то будет 412, возможно, это както связано с реестровым параметром downloadTimeout, который важен для других кейсов
     time.sleep(3)
     user_resp_code = "200"
     assert str(response.status_code) == user_resp_code
