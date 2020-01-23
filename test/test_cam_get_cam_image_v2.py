@@ -57,7 +57,7 @@ def test_GetV2CamLiveScaleImageCode200():
     response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/image?scale_y=500&scale_x=500", auth=auth, stream=True)
     user_resp_code = "200"
     # Этот слип очень важен в связке с папаметром downloadTimeout
-    time.sleep(3)
+    time.sleep(4)
     assert str(response.status_code) == user_resp_code
     # сохранить картинку в файл
     with open(exportPath+'img1.png', 'wb') as out_file:
