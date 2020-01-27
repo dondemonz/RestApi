@@ -112,7 +112,7 @@ def test_GetV2CamLiveScaleImageCode404():
 def test_GetV2CamImageCode200(fix):
     time.sleep(2)
     fix.send_react(("CAM|"+camId+"|REC").encode("utf-8"))
-    time.sleep(2)  # обязательно, чтобы записался архив
+    time.sleep(3)  # обязательно, чтобы записался архив
     # нужен ключ реестра deltaArchive который создается в первом тесте этого раздела
     m = dt.datetime.now()
     archtime = m.strftime("%Y%m%dT%H%M%S")
