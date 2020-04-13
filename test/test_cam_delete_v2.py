@@ -25,6 +25,3 @@ def test_DeleteV2CamerasCode404():
     data1 = json.loads(body)
     n = data1["message"]
     assert data == n
-
-def test123(fix):
-    print("123")
