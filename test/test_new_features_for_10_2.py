@@ -5,6 +5,7 @@ import time
 
 def test_CreateEnvironment(fix):
     fix.send_event(message=("CORE||CREATE_OBJECT|objtype<DEPARTMENT>,objid<8>,parent_id<1>,name<Test_Department8>").encode("utf-8"))
+    time.sleep(1)
     fix.send_event(message=("CORE||CREATE_OBJECT|objtype<PERSON>,objid<2.2>,parent_id<8>,name<2>,passwd2<2>").encode("utf-8"))
     # fix.send_event(message=("CORE||CREATE_OBJECT|objtype<REST_API>,objid<" + objId + ">,parent_id<" + slave + ">,name<Test_RestAPI>").encode("utf-8"))
     # fix.send_event(message=("CORE||UPDATE_OBJECT|objtype<REST_API>,objid<" + objId + ">,parent_id<" + slave + ">,event_filter_id<" + objId + ">,port<" + restPort + ">").encode("utf-8"))
