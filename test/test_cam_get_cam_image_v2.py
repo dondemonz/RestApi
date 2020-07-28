@@ -194,8 +194,8 @@ def test_GetV2CamImageCode503():
             response.raise_for_status()  # Raise error in case of failure Далее ловим ошибку, но продолжаем посылать запросы
         except requests.exceptions.RequestException:
             i += 1
-    # если увеличить этот слип, то будет 412 ошибка
-    time.sleep(2)
+    # если увеличить этот слип, то будет 412 ошибка, но если запускать этот тест отдельно, то нужен слип 2
+    time.sleep(1)
     m = dt.datetime.now()
     archtime = m.strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
     response = requests.get(url="http://" + slave_ip + ":"+restPort+"/api/v2/cameras/"+camId+"/image/" + archtime, auth=auth)
