@@ -17,6 +17,7 @@ objId = "999"
 personId = "1.999"
 departmentId = "1.999"
 exportPath = "C:\\export\\"
+user_rights_id = "1.1"
 
 
 tour_id = "0"  # Id настроенного тура

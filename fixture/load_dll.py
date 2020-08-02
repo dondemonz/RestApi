@@ -62,6 +62,7 @@ class DllHelper:
         msg = c_char_p(message)
         self.my_dll.SendMsg.argtypes = [c_char_p, c_char_p]
         self.my_dll.SendMsg(p3, msg)
+        time.sleep(1)
 
     def disconnect(self):
         self.my_dll.Disconnect(iidkId)
@@ -71,6 +72,7 @@ class DllHelper:
         self.callback_proto()
         self.callback_wrapper()
         self.connect()
+        time.sleep(1)
 
 
 """
